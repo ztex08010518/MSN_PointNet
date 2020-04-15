@@ -1,0 +1,1170 @@
+2020-03-16 12:50:30,182 - Model - INFO - PARAMETER ...
+2020-03-16 12:50:30,182 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 12:50:30,182 - Model - INFO - Load dataset ...
+2020-03-16 12:51:24,149 - Model - INFO - PARAMETER ...
+2020-03-16 12:51:24,149 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 12:51:24,149 - Model - INFO - Load dataset ...
+2020-03-16 12:53:49,370 - Model - INFO - PARAMETER ...
+2020-03-16 12:53:49,371 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 12:53:49,371 - Model - INFO - Load dataset ...
+2020-03-16 12:58:47,755 - Model - INFO - PARAMETER ...
+2020-03-16 12:58:47,755 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 12:58:47,755 - Model - INFO - Load dataset ...
+2020-03-16 13:02:41,323 - Model - INFO - PARAMETER ...
+2020-03-16 13:02:41,324 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:02:41,324 - Model - INFO - Load dataset ...
+2020-03-16 13:03:00,309 - Model - INFO - PARAMETER ...
+2020-03-16 13:03:00,310 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:03:00,310 - Model - INFO - Load dataset ...
+2020-03-16 13:04:15,969 - Model - INFO - PARAMETER ...
+2020-03-16 13:04:15,969 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:04:15,969 - Model - INFO - Load dataset ...
+2020-03-16 13:04:51,950 - Model - INFO - PARAMETER ...
+2020-03-16 13:04:51,950 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:04:51,950 - Model - INFO - Load dataset ...
+2020-03-16 13:07:05,544 - Model - INFO - PARAMETER ...
+2020-03-16 13:07:05,544 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:07:05,544 - Model - INFO - Load dataset ...
+2020-03-16 13:08:30,105 - Model - INFO - PARAMETER ...
+2020-03-16 13:08:30,105 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:08:30,105 - Model - INFO - Load dataset ...
+2020-03-16 13:10:19,239 - Model - INFO - PARAMETER ...
+2020-03-16 13:10:19,239 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:10:19,239 - Model - INFO - Load dataset ...
+2020-03-16 13:11:51,978 - Model - INFO - PARAMETER ...
+2020-03-16 13:11:51,978 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:11:51,978 - Model - INFO - Load dataset ...
+2020-03-16 13:11:53,917 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 13:11:53,918 - Model - INFO - Start training...
+2020-03-16 13:12:16,022 - Model - INFO - PARAMETER ...
+2020-03-16 13:12:16,022 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:12:16,022 - Model - INFO - Load dataset ...
+2020-03-16 13:12:18,060 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 13:12:18,061 - Model - INFO - Start training...
+2020-03-16 13:12:32,044 - Model - INFO - PARAMETER ...
+2020-03-16 13:12:32,044 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:12:32,044 - Model - INFO - Load dataset ...
+2020-03-16 13:12:34,129 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 13:12:34,130 - Model - INFO - Start training...
+2020-03-16 13:12:34,130 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 13:14:52,774 - Model - INFO - PARAMETER ...
+2020-03-16 13:14:52,774 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:14:52,774 - Model - INFO - Load dataset ...
+2020-03-16 13:14:54,738 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 13:14:54,739 - Model - INFO - Start training...
+2020-03-16 13:14:54,739 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 13:15:13,999 - Model - INFO - PARAMETER ...
+2020-03-16 13:15:13,999 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:15:13,999 - Model - INFO - Load dataset ...
+2020-03-16 13:15:15,916 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 13:15:15,916 - Model - INFO - Start training...
+2020-03-16 13:15:15,916 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 13:23:47,866 - Model - INFO - PARAMETER ...
+2020-03-16 13:23:47,866 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:23:47,866 - Model - INFO - Load dataset ...
+2020-03-16 13:23:49,902 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 13:23:49,903 - Model - INFO - Start training...
+2020-03-16 13:23:49,903 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 13:24:22,617 - Model - INFO - PARAMETER ...
+2020-03-16 13:24:22,617 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:24:22,617 - Model - INFO - Load dataset ...
+2020-03-16 13:24:24,447 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 13:24:24,448 - Model - INFO - Start training...
+2020-03-16 13:24:24,448 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 13:26:08,895 - Model - INFO - PARAMETER ...
+2020-03-16 13:26:08,896 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 13:26:08,896 - Model - INFO - Load dataset ...
+2020-03-16 13:26:10,882 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 13:26:10,883 - Model - INFO - Start training...
+2020-03-16 13:26:10,883 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:27:54,223 - Model - INFO - PARAMETER ...
+2020-03-16 14:27:54,224 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:27:54,224 - Model - INFO - Load dataset ...
+2020-03-16 14:27:56,206 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:27:56,207 - Model - INFO - Start training...
+2020-03-16 14:27:56,207 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:28:48,381 - Model - INFO - PARAMETER ...
+2020-03-16 14:28:48,381 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:28:48,381 - Model - INFO - Load dataset ...
+2020-03-16 14:28:50,247 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:28:50,248 - Model - INFO - Start training...
+2020-03-16 14:28:50,248 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:31:28,536 - Model - INFO - PARAMETER ...
+2020-03-16 14:31:28,536 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:31:28,536 - Model - INFO - Load dataset ...
+2020-03-16 14:31:30,453 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:31:30,454 - Model - INFO - Start training...
+2020-03-16 14:31:30,454 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:31:39,888 - Model - INFO - PARAMETER ...
+2020-03-16 14:31:39,889 - Model - INFO - Namespace(batch_size=64, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:31:39,889 - Model - INFO - Load dataset ...
+2020-03-16 14:31:41,814 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:31:41,815 - Model - INFO - Start training...
+2020-03-16 14:31:41,815 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:32:59,447 - Model - INFO - PARAMETER ...
+2020-03-16 14:32:59,448 - Model - INFO - Namespace(batch_size=64, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:32:59,448 - Model - INFO - Load dataset ...
+2020-03-16 14:33:01,417 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:33:01,418 - Model - INFO - Start training...
+2020-03-16 14:33:01,418 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:36:00,694 - Model - INFO - PARAMETER ...
+2020-03-16 14:36:00,694 - Model - INFO - Namespace(batch_size=64, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:36:00,695 - Model - INFO - Load dataset ...
+2020-03-16 14:36:02,534 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:36:02,535 - Model - INFO - Start training...
+2020-03-16 14:36:02,535 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:40:08,128 - Model - INFO - PARAMETER ...
+2020-03-16 14:40:08,129 - Model - INFO - Namespace(batch_size=64, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:40:08,129 - Model - INFO - Load dataset ...
+2020-03-16 14:40:09,990 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:40:09,991 - Model - INFO - Start training...
+2020-03-16 14:40:09,992 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:41:05,933 - Model - INFO - PARAMETER ...
+2020-03-16 14:41:05,934 - Model - INFO - Namespace(batch_size=64, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:41:05,934 - Model - INFO - Load dataset ...
+2020-03-16 14:41:07,761 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:41:07,761 - Model - INFO - Start training...
+2020-03-16 14:41:07,761 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:41:16,341 - Model - INFO - PARAMETER ...
+2020-03-16 14:41:16,341 - Model - INFO - Namespace(batch_size=64, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:41:16,341 - Model - INFO - Load dataset ...
+2020-03-16 14:41:18,162 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:41:18,163 - Model - INFO - Start training...
+2020-03-16 14:41:18,163 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:41:32,076 - Model - INFO - PARAMETER ...
+2020-03-16 14:41:32,077 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:41:32,077 - Model - INFO - Load dataset ...
+2020-03-16 14:41:33,918 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:41:33,919 - Model - INFO - Start training...
+2020-03-16 14:41:33,919 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:42:20,766 - Model - INFO - PARAMETER ...
+2020-03-16 14:42:20,767 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:42:20,767 - Model - INFO - Load dataset ...
+2020-03-16 14:42:22,650 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:42:22,651 - Model - INFO - Start training...
+2020-03-16 14:42:22,651 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:43:28,914 - Model - INFO - PARAMETER ...
+2020-03-16 14:43:28,914 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:43:28,915 - Model - INFO - Load dataset ...
+2020-03-16 14:43:30,789 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:43:30,791 - Model - INFO - Start training...
+2020-03-16 14:43:30,791 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:43:41,664 - Model - INFO - PARAMETER ...
+2020-03-16 14:43:41,665 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:43:41,665 - Model - INFO - Load dataset ...
+2020-03-16 14:43:43,505 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:43:43,506 - Model - INFO - Start training...
+2020-03-16 14:43:43,506 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:44:45,680 - Model - INFO - PARAMETER ...
+2020-03-16 14:44:45,680 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:44:45,681 - Model - INFO - Load dataset ...
+2020-03-16 14:44:47,543 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:44:47,544 - Model - INFO - Start training...
+2020-03-16 14:44:47,544 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:45:06,677 - Model - INFO - PARAMETER ...
+2020-03-16 14:45:06,677 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:45:06,677 - Model - INFO - Load dataset ...
+2020-03-16 14:45:08,494 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:45:08,495 - Model - INFO - Start training...
+2020-03-16 14:45:08,495 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:47:56,567 - Model - INFO - PARAMETER ...
+2020-03-16 14:47:56,567 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:47:56,567 - Model - INFO - Load dataset ...
+2020-03-16 14:47:58,414 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:47:58,415 - Model - INFO - Start training...
+2020-03-16 14:47:58,415 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:53:22,087 - Model - INFO - PARAMETER ...
+2020-03-16 14:53:22,087 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:53:22,087 - Model - INFO - Load dataset ...
+2020-03-16 14:53:24,027 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:53:24,028 - Model - INFO - Start training...
+2020-03-16 14:53:24,028 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:54:10,439 - Model - INFO - PARAMETER ...
+2020-03-16 14:54:10,439 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:54:10,439 - Model - INFO - Load dataset ...
+2020-03-16 14:54:12,283 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:54:12,284 - Model - INFO - Start training...
+2020-03-16 14:54:12,284 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:54:28,209 - Model - INFO - PARAMETER ...
+2020-03-16 14:54:28,209 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:54:28,209 - Model - INFO - Load dataset ...
+2020-03-16 14:54:30,109 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:54:30,110 - Model - INFO - Start training...
+2020-03-16 14:54:30,110 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:55:00,133 - Model - INFO - PARAMETER ...
+2020-03-16 14:55:00,133 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:55:00,133 - Model - INFO - Load dataset ...
+2020-03-16 14:55:02,013 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:55:02,014 - Model - INFO - Start training...
+2020-03-16 14:55:02,014 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:55:26,972 - Model - INFO - PARAMETER ...
+2020-03-16 14:55:26,973 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:55:26,973 - Model - INFO - Load dataset ...
+2020-03-16 14:55:30,491 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:55:30,493 - Model - INFO - Start training...
+2020-03-16 14:55:30,493 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:58:25,083 - Model - INFO - PARAMETER ...
+2020-03-16 14:58:25,084 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:58:25,084 - Model - INFO - Load dataset ...
+2020-03-16 14:58:28,493 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:58:28,496 - Model - INFO - Start training...
+2020-03-16 14:58:28,496 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:59:17,881 - Model - INFO - PARAMETER ...
+2020-03-16 14:59:17,881 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:59:17,881 - Model - INFO - Load dataset ...
+2020-03-16 14:59:21,634 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:59:21,637 - Model - INFO - Start training...
+2020-03-16 14:59:21,637 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 14:59:47,249 - Model - INFO - PARAMETER ...
+2020-03-16 14:59:47,249 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 14:59:47,249 - Model - INFO - Load dataset ...
+2020-03-16 14:59:49,229 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 14:59:49,229 - Model - INFO - Start training...
+2020-03-16 14:59:49,229 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 15:00:16,746 - Model - INFO - PARAMETER ...
+2020-03-16 15:00:16,746 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 15:00:16,746 - Model - INFO - Load dataset ...
+2020-03-16 15:00:18,724 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 15:00:18,725 - Model - INFO - Start training...
+2020-03-16 15:00:18,725 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 15:02:56,730 - Model - INFO - PARAMETER ...
+2020-03-16 15:02:56,731 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 15:02:56,731 - Model - INFO - Load dataset ...
+2020-03-16 15:02:58,676 - Model - INFO - No existing model, starting training from scratch...
+2020-03-16 15:02:58,677 - Model - INFO - Start training...
+2020-03-16 15:02:58,677 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 15:03:48,642 - Model - INFO - PARAMETER ...
+2020-03-16 15:03:48,642 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 15:03:48,643 - Model - INFO - Load dataset ...
+2020-03-16 15:03:50,585 - Model - INFO - Use pretrain model
+2020-03-16 15:03:50,586 - Model - INFO - Start training...
+2020-03-16 15:03:50,586 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 16:24:06,118 - Model - INFO - PARAMETER ...
+2020-03-16 16:24:06,118 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 16:24:06,118 - Model - INFO - Load dataset ...
+2020-03-16 16:24:08,017 - Model - INFO - Use pretrain model
+2020-03-16 16:24:08,051 - Model - INFO - Use pretrain model
+2020-03-16 16:24:08,052 - Model - INFO - Start training...
+2020-03-16 16:24:08,052 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 16:26:37,973 - Model - INFO - PARAMETER ...
+2020-03-16 16:26:37,973 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 16:26:37,973 - Model - INFO - Load dataset ...
+2020-03-16 16:26:39,890 - Model - INFO - Use MSN pretrain model
+2020-03-16 16:26:39,928 - Model - INFO - Use PointNet pretrain model
+2020-03-16 16:26:39,929 - Model - INFO - Start training...
+2020-03-16 16:26:39,929 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 16:27:59,446 - Model - INFO - Train Instance Accuracy: 0.414568
+2020-03-16 16:32:17,917 - Model - INFO - PARAMETER ...
+2020-03-16 16:32:17,918 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 16:32:17,918 - Model - INFO - Load dataset ...
+2020-03-16 16:32:19,854 - Model - INFO - Use MSN pretrain model
+2020-03-16 16:32:19,888 - Model - INFO - Use PointNet pretrain model
+2020-03-16 16:32:19,889 - Model - INFO - Start training...
+2020-03-16 16:32:19,889 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 16:33:39,190 - Model - INFO - Train Instance Accuracy: 0.426990
+2020-03-16 16:34:44,717 - Model - INFO - PARAMETER ...
+2020-03-16 16:34:44,717 - Model - INFO - Namespace(batch_size=8, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 16:34:44,717 - Model - INFO - Load dataset ...
+2020-03-16 16:34:46,713 - Model - INFO - Use MSN pretrain model
+2020-03-16 16:34:46,748 - Model - INFO - Use PointNet pretrain model
+2020-03-16 16:34:46,748 - Model - INFO - Start training...
+2020-03-16 16:34:46,748 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 16:35:04,105 - Model - INFO - PARAMETER ...
+2020-03-16 16:35:04,105 - Model - INFO - Namespace(batch_size=32, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 16:35:04,105 - Model - INFO - Load dataset ...
+2020-03-16 16:35:06,015 - Model - INFO - Use MSN pretrain model
+2020-03-16 16:35:06,050 - Model - INFO - Use PointNet pretrain model
+2020-03-16 16:35:06,051 - Model - INFO - Start training...
+2020-03-16 16:35:06,051 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 16:35:17,531 - Model - INFO - PARAMETER ...
+2020-03-16 16:35:17,531 - Model - INFO - Namespace(batch_size=16, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 16:35:17,531 - Model - INFO - Load dataset ...
+2020-03-16 16:35:19,458 - Model - INFO - Use MSN pretrain model
+2020-03-16 16:35:19,495 - Model - INFO - Use PointNet pretrain model
+2020-03-16 16:35:19,496 - Model - INFO - Start training...
+2020-03-16 16:35:19,496 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 16:36:31,895 - Model - INFO - Train Instance Accuracy: 0.522930
+2020-03-16 16:36:47,507 - Model - INFO - Test Instance Accuracy: 0.631855, Class Accuracy: 0.547627
+2020-03-16 16:36:47,507 - Model - INFO - Best Instance Accuracy: 0.631855, Class Accuracy: 0.547627
+2020-03-16 16:36:47,507 - Model - INFO - Save model...
+2020-03-16 16:36:47,507 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 16:36:47,765 - Model - INFO - Epoch 2 (2/200):
+2020-03-16 16:38:00,558 - Model - INFO - Train Instance Accuracy: 0.703024
+2020-03-16 16:38:16,245 - Model - INFO - Test Instance Accuracy: 0.756855, Class Accuracy: 0.652320
+2020-03-16 16:38:16,246 - Model - INFO - Best Instance Accuracy: 0.756855, Class Accuracy: 0.652320
+2020-03-16 16:38:16,246 - Model - INFO - Save model...
+2020-03-16 16:38:16,246 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 16:38:16,779 - Model - INFO - Epoch 3 (3/200):
+2020-03-16 16:39:29,692 - Model - INFO - Train Instance Accuracy: 0.738704
+2020-03-16 16:39:45,398 - Model - INFO - Test Instance Accuracy: 0.733065, Class Accuracy: 0.652481
+2020-03-16 16:39:45,398 - Model - INFO - Best Instance Accuracy: 0.756855, Class Accuracy: 0.652481
+2020-03-16 16:39:45,398 - Model - INFO - Epoch 4 (4/200):
+2020-03-16 16:40:58,501 - Model - INFO - Train Instance Accuracy: 0.761803
+2020-03-16 16:41:14,104 - Model - INFO - Test Instance Accuracy: 0.795161, Class Accuracy: 0.684208
+2020-03-16 16:41:14,104 - Model - INFO - Best Instance Accuracy: 0.795161, Class Accuracy: 0.684208
+2020-03-16 16:41:14,104 - Model - INFO - Save model...
+2020-03-16 16:41:14,104 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 16:41:14,602 - Model - INFO - Epoch 5 (5/200):
+2020-03-16 16:42:27,703 - Model - INFO - Train Instance Accuracy: 0.772017
+2020-03-16 16:42:43,339 - Model - INFO - Test Instance Accuracy: 0.771774, Class Accuracy: 0.700142
+2020-03-16 16:42:43,340 - Model - INFO - Best Instance Accuracy: 0.795161, Class Accuracy: 0.700142
+2020-03-16 16:42:43,340 - Model - INFO - Epoch 6 (6/200):
+2020-03-16 16:43:56,493 - Model - INFO - Train Instance Accuracy: 0.779863
+2020-03-16 16:44:12,208 - Model - INFO - Test Instance Accuracy: 0.793952, Class Accuracy: 0.707403
+2020-03-16 16:44:12,209 - Model - INFO - Best Instance Accuracy: 0.795161, Class Accuracy: 0.707403
+2020-03-16 16:44:12,328 - Model - INFO - Epoch 7 (7/200):
+2020-03-16 16:45:25,403 - Model - INFO - Train Instance Accuracy: 0.785342
+2020-03-16 16:45:41,038 - Model - INFO - Test Instance Accuracy: 0.827016, Class Accuracy: 0.758906
+2020-03-16 16:45:41,038 - Model - INFO - Best Instance Accuracy: 0.827016, Class Accuracy: 0.758906
+2020-03-16 16:45:41,038 - Model - INFO - Save model...
+2020-03-16 16:45:41,038 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 16:45:41,530 - Model - INFO - Epoch 8 (8/200):
+2020-03-16 16:55:49,053 - Model - INFO - PARAMETER ...
+2020-03-16 16:55:49,054 - Model - INFO - Namespace(batch_size=16, decay_rate=0.0001, gpu='0,1', learning_rate=0.001, method='concat', n_primitives=16, nepoch=200, num_point=1024, optimizer='Adam', output_dir='/home/psa/Desktop/peter/', sparsify_mode='zorder', weight_dir='/eva_data/psa/MSN_PointNet/MSN/outputs/zorder', workers=12)
+2020-03-16 16:55:49,054 - Model - INFO - Load dataset ...
+2020-03-16 16:55:51,077 - Model - INFO - Use MSN pretrain model
+2020-03-16 16:55:51,112 - Model - INFO - Use PointNet pretrain model
+2020-03-16 16:55:51,113 - Model - INFO - Start training...
+2020-03-16 16:55:51,113 - Model - INFO - Epoch 1 (1/200):
+2020-03-16 16:57:02,564 - Model - INFO - Train Instance Accuracy: 0.520698
+2020-03-16 16:57:18,120 - Model - INFO - Test Instance Accuracy: 0.718952, Class Accuracy: 0.601044
+2020-03-16 16:57:18,120 - Model - INFO - Best Instance Accuracy: 0.718952, Class Accuracy: 0.601044
+2020-03-16 16:57:18,120 - Model - INFO - Save model...
+2020-03-16 16:57:18,120 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 16:57:19,096 - Model - INFO - Epoch 2 (2/200):
+2020-03-16 16:58:31,812 - Model - INFO - Train Instance Accuracy: 0.704681
+2020-03-16 16:58:47,444 - Model - INFO - Test Instance Accuracy: 0.765323, Class Accuracy: 0.663096
+2020-03-16 16:58:47,444 - Model - INFO - Best Instance Accuracy: 0.765323, Class Accuracy: 0.663096
+2020-03-16 16:58:47,444 - Model - INFO - Save model...
+2020-03-16 16:58:47,444 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 16:58:47,926 - Model - INFO - Epoch 3 (3/200):
+2020-03-16 17:00:00,655 - Model - INFO - Train Instance Accuracy: 0.741139
+2020-03-16 17:00:16,336 - Model - INFO - Test Instance Accuracy: 0.765323, Class Accuracy: 0.669980
+2020-03-16 17:00:16,336 - Model - INFO - Best Instance Accuracy: 0.765323, Class Accuracy: 0.669980
+2020-03-16 17:00:16,336 - Model - INFO - Save model...
+2020-03-16 17:00:16,336 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:00:16,839 - Model - INFO - Epoch 4 (4/200):
+2020-03-16 17:01:29,861 - Model - INFO - Train Instance Accuracy: 0.755952
+2020-03-16 17:01:45,575 - Model - INFO - Test Instance Accuracy: 0.791935, Class Accuracy: 0.704287
+2020-03-16 17:01:45,576 - Model - INFO - Best Instance Accuracy: 0.791935, Class Accuracy: 0.704287
+2020-03-16 17:01:45,576 - Model - INFO - Save model...
+2020-03-16 17:01:45,576 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:01:46,049 - Model - INFO - Epoch 5 (5/200):
+2020-03-16 17:02:59,094 - Model - INFO - Train Instance Accuracy: 0.773404
+2020-03-16 17:03:14,843 - Model - INFO - Test Instance Accuracy: 0.790726, Class Accuracy: 0.690239
+2020-03-16 17:03:14,843 - Model - INFO - Best Instance Accuracy: 0.791935, Class Accuracy: 0.704287
+2020-03-16 17:03:14,843 - Model - INFO - Epoch 6 (6/200):
+2020-03-16 17:04:28,013 - Model - INFO - Train Instance Accuracy: 0.775467
+2020-03-16 17:04:43,720 - Model - INFO - Test Instance Accuracy: 0.798387, Class Accuracy: 0.720434
+2020-03-16 17:04:43,720 - Model - INFO - Best Instance Accuracy: 0.798387, Class Accuracy: 0.720434
+2020-03-16 17:04:43,720 - Model - INFO - Save model...
+2020-03-16 17:04:43,720 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:04:44,746 - Model - INFO - Epoch 7 (7/200):
+2020-03-16 17:05:57,887 - Model - INFO - Train Instance Accuracy: 0.787202
+2020-03-16 17:06:13,615 - Model - INFO - Test Instance Accuracy: 0.794758, Class Accuracy: 0.713662
+2020-03-16 17:06:13,615 - Model - INFO - Best Instance Accuracy: 0.798387, Class Accuracy: 0.720434
+2020-03-16 17:06:13,615 - Model - INFO - Epoch 8 (8/200):
+2020-03-16 17:07:26,659 - Model - INFO - Train Instance Accuracy: 0.791362
+2020-03-16 17:07:42,395 - Model - INFO - Test Instance Accuracy: 0.825806, Class Accuracy: 0.730699
+2020-03-16 17:07:42,395 - Model - INFO - Best Instance Accuracy: 0.825806, Class Accuracy: 0.730699
+2020-03-16 17:07:42,395 - Model - INFO - Save model...
+2020-03-16 17:07:42,395 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:07:42,889 - Model - INFO - Epoch 9 (9/200):
+2020-03-16 17:08:56,225 - Model - INFO - Train Instance Accuracy: 0.786999
+2020-03-16 17:09:11,979 - Model - INFO - Test Instance Accuracy: 0.818952, Class Accuracy: 0.738839
+2020-03-16 17:09:11,979 - Model - INFO - Best Instance Accuracy: 0.825806, Class Accuracy: 0.738839
+2020-03-16 17:09:11,979 - Model - INFO - Epoch 10 (10/200):
+2020-03-16 17:10:25,232 - Model - INFO - Train Instance Accuracy: 0.801441
+2020-03-16 17:10:40,967 - Model - INFO - Test Instance Accuracy: 0.810887, Class Accuracy: 0.730346
+2020-03-16 17:10:40,967 - Model - INFO - Best Instance Accuracy: 0.825806, Class Accuracy: 0.738839
+2020-03-16 17:10:40,968 - Model - INFO - Epoch 11 (11/200):
+2020-03-16 17:11:54,217 - Model - INFO - Train Instance Accuracy: 0.803673
+2020-03-16 17:12:09,940 - Model - INFO - Test Instance Accuracy: 0.833871, Class Accuracy: 0.754743
+2020-03-16 17:12:09,940 - Model - INFO - Best Instance Accuracy: 0.833871, Class Accuracy: 0.754743
+2020-03-16 17:12:09,940 - Model - INFO - Save model...
+2020-03-16 17:12:09,940 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:12:10,580 - Model - INFO - Epoch 12 (12/200):
+2020-03-16 17:13:23,779 - Model - INFO - Train Instance Accuracy: 0.803774
+2020-03-16 17:13:39,595 - Model - INFO - Test Instance Accuracy: 0.811694, Class Accuracy: 0.729541
+2020-03-16 17:13:39,595 - Model - INFO - Best Instance Accuracy: 0.833871, Class Accuracy: 0.754743
+2020-03-16 17:13:39,596 - Model - INFO - Epoch 13 (13/200):
+2020-03-16 17:14:52,942 - Model - INFO - Train Instance Accuracy: 0.805804
+2020-03-16 17:15:08,685 - Model - INFO - Test Instance Accuracy: 0.821371, Class Accuracy: 0.752246
+2020-03-16 17:15:08,685 - Model - INFO - Best Instance Accuracy: 0.833871, Class Accuracy: 0.754743
+2020-03-16 17:15:08,686 - Model - INFO - Epoch 14 (14/200):
+2020-03-16 17:16:22,002 - Model - INFO - Train Instance Accuracy: 0.809693
+2020-03-16 17:16:37,764 - Model - INFO - Test Instance Accuracy: 0.839113, Class Accuracy: 0.751620
+2020-03-16 17:16:37,765 - Model - INFO - Best Instance Accuracy: 0.839113, Class Accuracy: 0.754743
+2020-03-16 17:16:37,765 - Model - INFO - Save model...
+2020-03-16 17:16:37,765 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:16:38,251 - Model - INFO - Epoch 15 (15/200):
+2020-03-16 17:17:51,527 - Model - INFO - Train Instance Accuracy: 0.810775
+2020-03-16 17:18:07,273 - Model - INFO - Test Instance Accuracy: 0.822581, Class Accuracy: 0.760186
+2020-03-16 17:18:07,274 - Model - INFO - Best Instance Accuracy: 0.839113, Class Accuracy: 0.760186
+2020-03-16 17:18:07,274 - Model - INFO - Epoch 16 (16/200):
+2020-03-16 17:19:20,544 - Model - INFO - Train Instance Accuracy: 0.811621
+2020-03-16 17:19:36,290 - Model - INFO - Test Instance Accuracy: 0.821371, Class Accuracy: 0.754527
+2020-03-16 17:19:36,290 - Model - INFO - Best Instance Accuracy: 0.839113, Class Accuracy: 0.760186
+2020-03-16 17:19:36,426 - Model - INFO - Epoch 17 (17/200):
+2020-03-16 17:20:49,693 - Model - INFO - Train Instance Accuracy: 0.822443
+2020-03-16 17:21:05,441 - Model - INFO - Test Instance Accuracy: 0.811694, Class Accuracy: 0.746498
+2020-03-16 17:21:05,442 - Model - INFO - Best Instance Accuracy: 0.839113, Class Accuracy: 0.760186
+2020-03-16 17:21:05,442 - Model - INFO - Epoch 18 (18/200):
+2020-03-16 17:22:18,846 - Model - INFO - Train Instance Accuracy: 0.821733
+2020-03-16 17:22:34,635 - Model - INFO - Test Instance Accuracy: 0.829435, Class Accuracy: 0.746262
+2020-03-16 17:22:34,635 - Model - INFO - Best Instance Accuracy: 0.839113, Class Accuracy: 0.760186
+2020-03-16 17:22:34,635 - Model - INFO - Epoch 19 (19/200):
+2020-03-16 17:23:47,911 - Model - INFO - Train Instance Accuracy: 0.825656
+2020-03-16 17:24:03,637 - Model - INFO - Test Instance Accuracy: 0.833871, Class Accuracy: 0.765570
+2020-03-16 17:24:03,637 - Model - INFO - Best Instance Accuracy: 0.839113, Class Accuracy: 0.765570
+2020-03-16 17:24:03,638 - Model - INFO - Epoch 20 (20/200):
+2020-03-16 17:25:16,881 - Model - INFO - Train Instance Accuracy: 0.840300
+2020-03-16 17:25:32,644 - Model - INFO - Test Instance Accuracy: 0.841129, Class Accuracy: 0.762176
+2020-03-16 17:25:32,644 - Model - INFO - Best Instance Accuracy: 0.841129, Class Accuracy: 0.765570
+2020-03-16 17:25:32,644 - Model - INFO - Save model...
+2020-03-16 17:25:32,644 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:25:33,187 - Model - INFO - Epoch 21 (21/200):
+2020-03-16 17:26:46,393 - Model - INFO - Train Instance Accuracy: 0.847707
+2020-03-16 17:27:02,149 - Model - INFO - Test Instance Accuracy: 0.851210, Class Accuracy: 0.798611
+2020-03-16 17:27:02,149 - Model - INFO - Best Instance Accuracy: 0.851210, Class Accuracy: 0.798611
+2020-03-16 17:27:02,149 - Model - INFO - Save model...
+2020-03-16 17:27:02,149 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:27:02,774 - Model - INFO - Epoch 22 (22/200):
+2020-03-16 17:28:15,981 - Model - INFO - Train Instance Accuracy: 0.852036
+2020-03-16 17:28:31,741 - Model - INFO - Test Instance Accuracy: 0.868548, Class Accuracy: 0.801439
+2020-03-16 17:28:31,741 - Model - INFO - Best Instance Accuracy: 0.868548, Class Accuracy: 0.801439
+2020-03-16 17:28:31,741 - Model - INFO - Save model...
+2020-03-16 17:28:31,741 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:28:32,251 - Model - INFO - Epoch 23 (23/200):
+2020-03-16 17:29:45,567 - Model - INFO - Train Instance Accuracy: 0.850886
+2020-03-16 17:30:01,335 - Model - INFO - Test Instance Accuracy: 0.850806, Class Accuracy: 0.775146
+2020-03-16 17:30:01,335 - Model - INFO - Best Instance Accuracy: 0.868548, Class Accuracy: 0.801439
+2020-03-16 17:30:01,335 - Model - INFO - Epoch 24 (24/200):
+2020-03-16 17:31:14,687 - Model - INFO - Train Instance Accuracy: 0.849297
+2020-03-16 17:31:30,391 - Model - INFO - Test Instance Accuracy: 0.867742, Class Accuracy: 0.796323
+2020-03-16 17:31:30,391 - Model - INFO - Best Instance Accuracy: 0.868548, Class Accuracy: 0.801439
+2020-03-16 17:31:30,391 - Model - INFO - Epoch 25 (25/200):
+2020-03-16 17:32:43,809 - Model - INFO - Train Instance Accuracy: 0.847978
+2020-03-16 17:32:59,614 - Model - INFO - Test Instance Accuracy: 0.861694, Class Accuracy: 0.785227
+2020-03-16 17:32:59,615 - Model - INFO - Best Instance Accuracy: 0.868548, Class Accuracy: 0.801439
+2020-03-16 17:32:59,615 - Model - INFO - Epoch 26 (26/200):
+2020-03-16 17:34:13,031 - Model - INFO - Train Instance Accuracy: 0.859544
+2020-03-16 17:34:28,757 - Model - INFO - Test Instance Accuracy: 0.847581, Class Accuracy: 0.785678
+2020-03-16 17:34:28,757 - Model - INFO - Best Instance Accuracy: 0.868548, Class Accuracy: 0.801439
+2020-03-16 17:34:28,887 - Model - INFO - Epoch 27 (27/200):
+2020-03-16 17:35:42,267 - Model - INFO - Train Instance Accuracy: 0.849601
+2020-03-16 17:35:58,122 - Model - INFO - Test Instance Accuracy: 0.866532, Class Accuracy: 0.788266
+2020-03-16 17:35:58,122 - Model - INFO - Best Instance Accuracy: 0.868548, Class Accuracy: 0.801439
+2020-03-16 17:35:58,122 - Model - INFO - Epoch 28 (28/200):
+2020-03-16 17:37:11,565 - Model - INFO - Train Instance Accuracy: 0.853355
+2020-03-16 17:37:27,407 - Model - INFO - Test Instance Accuracy: 0.858468, Class Accuracy: 0.808584
+2020-03-16 17:37:27,407 - Model - INFO - Best Instance Accuracy: 0.868548, Class Accuracy: 0.808584
+2020-03-16 17:37:27,407 - Model - INFO - Epoch 29 (29/200):
+2020-03-16 17:38:40,708 - Model - INFO - Train Instance Accuracy: 0.850988
+2020-03-16 17:38:56,416 - Model - INFO - Test Instance Accuracy: 0.867742, Class Accuracy: 0.807193
+2020-03-16 17:38:56,417 - Model - INFO - Best Instance Accuracy: 0.868548, Class Accuracy: 0.808584
+2020-03-16 17:38:56,417 - Model - INFO - Epoch 30 (30/200):
+2020-03-16 17:40:09,751 - Model - INFO - Train Instance Accuracy: 0.850649
+2020-03-16 17:40:25,458 - Model - INFO - Test Instance Accuracy: 0.859274, Class Accuracy: 0.778870
+2020-03-16 17:40:25,459 - Model - INFO - Best Instance Accuracy: 0.868548, Class Accuracy: 0.808584
+2020-03-16 17:40:25,459 - Model - INFO - Epoch 31 (31/200):
+2020-03-16 17:41:38,707 - Model - INFO - Train Instance Accuracy: 0.861134
+2020-03-16 17:41:54,517 - Model - INFO - Test Instance Accuracy: 0.866935, Class Accuracy: 0.802223
+2020-03-16 17:41:54,518 - Model - INFO - Best Instance Accuracy: 0.868548, Class Accuracy: 0.808584
+2020-03-16 17:41:54,666 - Model - INFO - Epoch 32 (32/200):
+2020-03-16 17:43:08,095 - Model - INFO - Train Instance Accuracy: 0.858462
+2020-03-16 17:43:23,827 - Model - INFO - Test Instance Accuracy: 0.845968, Class Accuracy: 0.790278
+2020-03-16 17:43:23,827 - Model - INFO - Best Instance Accuracy: 0.868548, Class Accuracy: 0.808584
+2020-03-16 17:43:23,827 - Model - INFO - Epoch 33 (33/200):
+2020-03-16 17:44:37,239 - Model - INFO - Train Instance Accuracy: 0.856331
+2020-03-16 17:44:53,078 - Model - INFO - Test Instance Accuracy: 0.869758, Class Accuracy: 0.804192
+2020-03-16 17:44:53,079 - Model - INFO - Best Instance Accuracy: 0.869758, Class Accuracy: 0.808584
+2020-03-16 17:44:53,079 - Model - INFO - Save model...
+2020-03-16 17:44:53,079 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:44:53,549 - Model - INFO - Epoch 34 (34/200):
+2020-03-16 17:46:06,837 - Model - INFO - Train Instance Accuracy: 0.858225
+2020-03-16 17:46:22,629 - Model - INFO - Test Instance Accuracy: 0.864919, Class Accuracy: 0.800044
+2020-03-16 17:46:22,629 - Model - INFO - Best Instance Accuracy: 0.869758, Class Accuracy: 0.808584
+2020-03-16 17:46:22,629 - Model - INFO - Epoch 35 (35/200):
+2020-03-16 17:47:36,019 - Model - INFO - Train Instance Accuracy: 0.860051
+2020-03-16 17:47:51,773 - Model - INFO - Test Instance Accuracy: 0.877016, Class Accuracy: 0.812353
+2020-03-16 17:47:51,773 - Model - INFO - Best Instance Accuracy: 0.877016, Class Accuracy: 0.812353
+2020-03-16 17:47:51,773 - Model - INFO - Save model...
+2020-03-16 17:47:51,773 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:47:52,260 - Model - INFO - Epoch 36 (36/200):
+2020-03-16 17:49:05,533 - Model - INFO - Train Instance Accuracy: 0.865463
+2020-03-16 17:49:21,305 - Model - INFO - Test Instance Accuracy: 0.874194, Class Accuracy: 0.821076
+2020-03-16 17:49:21,305 - Model - INFO - Best Instance Accuracy: 0.877016, Class Accuracy: 0.821076
+2020-03-16 17:49:21,449 - Model - INFO - Epoch 37 (37/200):
+2020-03-16 17:50:34,814 - Model - INFO - Train Instance Accuracy: 0.860863
+2020-03-16 17:50:50,577 - Model - INFO - Test Instance Accuracy: 0.862500, Class Accuracy: 0.808208
+2020-03-16 17:50:50,577 - Model - INFO - Best Instance Accuracy: 0.877016, Class Accuracy: 0.821076
+2020-03-16 17:50:50,577 - Model - INFO - Epoch 38 (38/200):
+2020-03-16 17:52:03,882 - Model - INFO - Train Instance Accuracy: 0.868371
+2020-03-16 17:52:19,696 - Model - INFO - Test Instance Accuracy: 0.855645, Class Accuracy: 0.790130
+2020-03-16 17:52:19,696 - Model - INFO - Best Instance Accuracy: 0.877016, Class Accuracy: 0.821076
+2020-03-16 17:52:19,696 - Model - INFO - Epoch 39 (39/200):
+2020-03-16 17:53:33,205 - Model - INFO - Train Instance Accuracy: 0.853524
+2020-03-16 17:53:48,943 - Model - INFO - Test Instance Accuracy: 0.870968, Class Accuracy: 0.810513
+2020-03-16 17:53:48,944 - Model - INFO - Best Instance Accuracy: 0.877016, Class Accuracy: 0.821076
+2020-03-16 17:53:48,944 - Model - INFO - Epoch 40 (40/200):
+2020-03-16 17:55:02,218 - Model - INFO - Train Instance Accuracy: 0.872971
+2020-03-16 17:55:18,013 - Model - INFO - Test Instance Accuracy: 0.879839, Class Accuracy: 0.814458
+2020-03-16 17:55:18,013 - Model - INFO - Best Instance Accuracy: 0.879839, Class Accuracy: 0.821076
+2020-03-16 17:55:18,013 - Model - INFO - Save model...
+2020-03-16 17:55:18,013 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:55:18,538 - Model - INFO - Epoch 41 (41/200):
+2020-03-16 17:56:31,988 - Model - INFO - Train Instance Accuracy: 0.878686
+2020-03-16 17:56:47,803 - Model - INFO - Test Instance Accuracy: 0.876210, Class Accuracy: 0.814416
+2020-03-16 17:56:47,803 - Model - INFO - Best Instance Accuracy: 0.879839, Class Accuracy: 0.821076
+2020-03-16 17:56:47,963 - Model - INFO - Epoch 42 (42/200):
+2020-03-16 17:58:01,293 - Model - INFO - Train Instance Accuracy: 0.876691
+2020-03-16 17:58:17,064 - Model - INFO - Test Instance Accuracy: 0.879032, Class Accuracy: 0.818320
+2020-03-16 17:58:17,064 - Model - INFO - Best Instance Accuracy: 0.879839, Class Accuracy: 0.821076
+2020-03-16 17:58:17,065 - Model - INFO - Epoch 43 (43/200):
+2020-03-16 17:59:30,481 - Model - INFO - Train Instance Accuracy: 0.874662
+2020-03-16 17:59:46,266 - Model - INFO - Test Instance Accuracy: 0.884677, Class Accuracy: 0.821396
+2020-03-16 17:59:46,266 - Model - INFO - Best Instance Accuracy: 0.884677, Class Accuracy: 0.821396
+2020-03-16 17:59:46,266 - Model - INFO - Save model...
+2020-03-16 17:59:46,266 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 17:59:46,743 - Model - INFO - Epoch 44 (44/200):
+2020-03-16 18:01:00,139 - Model - INFO - Train Instance Accuracy: 0.879802
+2020-03-16 18:01:15,952 - Model - INFO - Test Instance Accuracy: 0.872177, Class Accuracy: 0.815862
+2020-03-16 18:01:15,952 - Model - INFO - Best Instance Accuracy: 0.884677, Class Accuracy: 0.821396
+2020-03-16 18:01:15,952 - Model - INFO - Epoch 45 (45/200):
+2020-03-16 18:02:29,480 - Model - INFO - Train Instance Accuracy: 0.876285
+2020-03-16 18:02:45,248 - Model - INFO - Test Instance Accuracy: 0.873387, Class Accuracy: 0.819728
+2020-03-16 18:02:45,249 - Model - INFO - Best Instance Accuracy: 0.884677, Class Accuracy: 0.821396
+2020-03-16 18:02:45,249 - Model - INFO - Epoch 46 (46/200):
+2020-03-16 18:03:58,672 - Model - INFO - Train Instance Accuracy: 0.878856
+2020-03-16 18:04:14,406 - Model - INFO - Test Instance Accuracy: 0.881048, Class Accuracy: 0.825105
+2020-03-16 18:04:14,407 - Model - INFO - Best Instance Accuracy: 0.884677, Class Accuracy: 0.825105
+2020-03-16 18:04:14,539 - Model - INFO - Epoch 47 (47/200):
+2020-03-16 18:05:27,953 - Model - INFO - Train Instance Accuracy: 0.878822
+2020-03-16 18:05:43,668 - Model - INFO - Test Instance Accuracy: 0.871371, Class Accuracy: 0.805299
+2020-03-16 18:05:43,668 - Model - INFO - Best Instance Accuracy: 0.884677, Class Accuracy: 0.825105
+2020-03-16 18:05:43,669 - Model - INFO - Epoch 48 (48/200):
+2020-03-16 18:06:57,101 - Model - INFO - Train Instance Accuracy: 0.877942
+2020-03-16 18:07:12,900 - Model - INFO - Test Instance Accuracy: 0.862097, Class Accuracy: 0.804289
+2020-03-16 18:07:12,900 - Model - INFO - Best Instance Accuracy: 0.884677, Class Accuracy: 0.825105
+2020-03-16 18:07:12,900 - Model - INFO - Epoch 49 (49/200):
+2020-03-16 18:08:26,427 - Model - INFO - Train Instance Accuracy: 0.882812
+2020-03-16 18:08:42,228 - Model - INFO - Test Instance Accuracy: 0.874194, Class Accuracy: 0.821503
+2020-03-16 18:08:42,228 - Model - INFO - Best Instance Accuracy: 0.884677, Class Accuracy: 0.825105
+2020-03-16 18:08:42,228 - Model - INFO - Epoch 50 (50/200):
+2020-03-16 18:09:55,639 - Model - INFO - Train Instance Accuracy: 0.884267
+2020-03-16 18:10:11,423 - Model - INFO - Test Instance Accuracy: 0.877016, Class Accuracy: 0.826339
+2020-03-16 18:10:11,423 - Model - INFO - Best Instance Accuracy: 0.884677, Class Accuracy: 0.826339
+2020-03-16 18:10:11,423 - Model - INFO - Epoch 51 (51/200):
+2020-03-16 18:11:24,849 - Model - INFO - Train Instance Accuracy: 0.882474
+2020-03-16 18:11:40,610 - Model - INFO - Test Instance Accuracy: 0.890323, Class Accuracy: 0.830694
+2020-03-16 18:11:40,610 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.830694
+2020-03-16 18:11:40,610 - Model - INFO - Save model...
+2020-03-16 18:11:40,610 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 18:11:41,221 - Model - INFO - Epoch 52 (52/200):
+2020-03-16 18:12:54,651 - Model - INFO - Train Instance Accuracy: 0.882914
+2020-03-16 18:13:10,430 - Model - INFO - Test Instance Accuracy: 0.887500, Class Accuracy: 0.828469
+2020-03-16 18:13:10,430 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.830694
+2020-03-16 18:13:10,430 - Model - INFO - Epoch 53 (53/200):
+2020-03-16 18:14:23,858 - Model - INFO - Train Instance Accuracy: 0.885281
+2020-03-16 18:14:39,612 - Model - INFO - Test Instance Accuracy: 0.872984, Class Accuracy: 0.824562
+2020-03-16 18:14:39,612 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.830694
+2020-03-16 18:14:39,612 - Model - INFO - Epoch 54 (54/200):
+2020-03-16 18:15:53,146 - Model - INFO - Train Instance Accuracy: 0.882745
+2020-03-16 18:16:08,928 - Model - INFO - Test Instance Accuracy: 0.873790, Class Accuracy: 0.822661
+2020-03-16 18:16:08,929 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.830694
+2020-03-16 18:16:08,929 - Model - INFO - Epoch 55 (55/200):
+2020-03-16 18:17:22,416 - Model - INFO - Train Instance Accuracy: 0.870299
+2020-03-16 18:17:38,280 - Model - INFO - Test Instance Accuracy: 0.877823, Class Accuracy: 0.823681
+2020-03-16 18:17:38,280 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.830694
+2020-03-16 18:17:38,281 - Model - INFO - Epoch 56 (56/200):
+2020-03-16 18:18:51,747 - Model - INFO - Train Instance Accuracy: 0.882779
+2020-03-16 18:19:07,527 - Model - INFO - Test Instance Accuracy: 0.880645, Class Accuracy: 0.828933
+2020-03-16 18:19:07,527 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.830694
+2020-03-16 18:19:07,664 - Model - INFO - Epoch 57 (57/200):
+2020-03-16 18:20:21,079 - Model - INFO - Train Instance Accuracy: 0.885045
+2020-03-16 18:20:36,918 - Model - INFO - Test Instance Accuracy: 0.883468, Class Accuracy: 0.825440
+2020-03-16 18:20:36,918 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.830694
+2020-03-16 18:20:36,919 - Model - INFO - Epoch 58 (58/200):
+2020-03-16 18:21:50,379 - Model - INFO - Train Instance Accuracy: 0.884808
+2020-03-16 18:22:06,195 - Model - INFO - Test Instance Accuracy: 0.881855, Class Accuracy: 0.834003
+2020-03-16 18:22:06,195 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.834003
+2020-03-16 18:22:06,195 - Model - INFO - Epoch 59 (59/200):
+2020-03-16 18:23:19,804 - Model - INFO - Train Instance Accuracy: 0.888528
+2020-03-16 18:23:35,688 - Model - INFO - Test Instance Accuracy: 0.889919, Class Accuracy: 0.836355
+2020-03-16 18:23:35,688 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.836355
+2020-03-16 18:23:35,688 - Model - INFO - Epoch 60 (60/200):
+2020-03-16 18:24:49,267 - Model - INFO - Train Instance Accuracy: 0.894379
+2020-03-16 18:25:05,096 - Model - INFO - Test Instance Accuracy: 0.883468, Class Accuracy: 0.830666
+2020-03-16 18:25:05,097 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.836355
+2020-03-16 18:25:05,097 - Model - INFO - Epoch 61 (61/200):
+2020-03-16 18:26:18,522 - Model - INFO - Train Instance Accuracy: 0.894311
+2020-03-16 18:26:34,318 - Model - INFO - Test Instance Accuracy: 0.884677, Class Accuracy: 0.836158
+2020-03-16 18:26:34,318 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.836355
+2020-03-16 18:26:34,485 - Model - INFO - Epoch 62 (62/200):
+2020-03-16 18:27:47,904 - Model - INFO - Train Instance Accuracy: 0.891843
+2020-03-16 18:28:03,680 - Model - INFO - Test Instance Accuracy: 0.885484, Class Accuracy: 0.830020
+2020-03-16 18:28:03,680 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.836355
+2020-03-16 18:28:03,680 - Model - INFO - Epoch 63 (63/200):
+2020-03-16 18:29:17,143 - Model - INFO - Train Instance Accuracy: 0.897727
+2020-03-16 18:29:32,942 - Model - INFO - Test Instance Accuracy: 0.883468, Class Accuracy: 0.838787
+2020-03-16 18:29:32,942 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:29:32,942 - Model - INFO - Epoch 64 (64/200):
+2020-03-16 18:30:46,398 - Model - INFO - Train Instance Accuracy: 0.898539
+2020-03-16 18:31:02,263 - Model - INFO - Test Instance Accuracy: 0.887903, Class Accuracy: 0.837635
+2020-03-16 18:31:02,263 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:31:02,263 - Model - INFO - Epoch 65 (65/200):
+2020-03-16 18:32:15,797 - Model - INFO - Train Instance Accuracy: 0.896205
+2020-03-16 18:32:31,569 - Model - INFO - Test Instance Accuracy: 0.887903, Class Accuracy: 0.833759
+2020-03-16 18:32:31,569 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:32:31,569 - Model - INFO - Epoch 66 (66/200):
+2020-03-16 18:33:45,167 - Model - INFO - Train Instance Accuracy: 0.898235
+2020-03-16 18:34:00,951 - Model - INFO - Test Instance Accuracy: 0.883468, Class Accuracy: 0.830956
+2020-03-16 18:34:00,952 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:34:01,081 - Model - INFO - Epoch 67 (67/200):
+2020-03-16 18:35:14,529 - Model - INFO - Train Instance Accuracy: 0.898404
+2020-03-16 18:35:30,403 - Model - INFO - Test Instance Accuracy: 0.884677, Class Accuracy: 0.826134
+2020-03-16 18:35:30,403 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:35:30,403 - Model - INFO - Epoch 68 (68/200):
+2020-03-16 18:36:43,939 - Model - INFO - Train Instance Accuracy: 0.901075
+2020-03-16 18:36:59,716 - Model - INFO - Test Instance Accuracy: 0.888306, Class Accuracy: 0.838355
+2020-03-16 18:36:59,717 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:36:59,717 - Model - INFO - Epoch 69 (69/200):
+2020-03-16 18:38:13,316 - Model - INFO - Train Instance Accuracy: 0.901650
+2020-03-16 18:38:29,072 - Model - INFO - Test Instance Accuracy: 0.881452, Class Accuracy: 0.812543
+2020-03-16 18:38:29,072 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:38:29,072 - Model - INFO - Epoch 70 (70/200):
+2020-03-16 18:39:42,595 - Model - INFO - Train Instance Accuracy: 0.898370
+2020-03-16 18:39:58,415 - Model - INFO - Test Instance Accuracy: 0.886694, Class Accuracy: 0.829938
+2020-03-16 18:39:58,416 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:39:58,416 - Model - INFO - Epoch 71 (71/200):
+2020-03-16 18:41:11,949 - Model - INFO - Train Instance Accuracy: 0.898336
+2020-03-16 18:41:27,738 - Model - INFO - Test Instance Accuracy: 0.883871, Class Accuracy: 0.823284
+2020-03-16 18:41:27,738 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:41:27,869 - Model - INFO - Epoch 72 (72/200):
+2020-03-16 18:42:41,431 - Model - INFO - Train Instance Accuracy: 0.898979
+2020-03-16 18:42:57,199 - Model - INFO - Test Instance Accuracy: 0.882661, Class Accuracy: 0.828999
+2020-03-16 18:42:57,199 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:42:57,200 - Model - INFO - Epoch 73 (73/200):
+2020-03-16 18:44:10,635 - Model - INFO - Train Instance Accuracy: 0.901414
+2020-03-16 18:44:26,436 - Model - INFO - Test Instance Accuracy: 0.881855, Class Accuracy: 0.827373
+2020-03-16 18:44:26,436 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:44:26,436 - Model - INFO - Epoch 74 (74/200):
+2020-03-16 18:45:39,967 - Model - INFO - Train Instance Accuracy: 0.893094
+2020-03-16 18:45:55,721 - Model - INFO - Test Instance Accuracy: 0.881855, Class Accuracy: 0.814336
+2020-03-16 18:45:55,721 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:45:55,721 - Model - INFO - Epoch 75 (75/200):
+2020-03-16 18:47:09,254 - Model - INFO - Train Instance Accuracy: 0.894311
+2020-03-16 18:47:25,025 - Model - INFO - Test Instance Accuracy: 0.882258, Class Accuracy: 0.823690
+2020-03-16 18:47:25,025 - Model - INFO - Best Instance Accuracy: 0.890323, Class Accuracy: 0.838787
+2020-03-16 18:47:25,025 - Model - INFO - Epoch 76 (76/200):
+2020-03-16 18:48:38,548 - Model - INFO - Train Instance Accuracy: 0.899959
+2020-03-16 18:48:54,356 - Model - INFO - Test Instance Accuracy: 0.893145, Class Accuracy: 0.844423
+2020-03-16 18:48:54,356 - Model - INFO - Best Instance Accuracy: 0.893145, Class Accuracy: 0.844423
+2020-03-16 18:48:54,356 - Model - INFO - Save model...
+2020-03-16 18:48:54,356 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 18:48:55,009 - Model - INFO - Epoch 77 (77/200):
+2020-03-16 18:50:08,522 - Model - INFO - Train Instance Accuracy: 0.904728
+2020-03-16 18:50:24,385 - Model - INFO - Test Instance Accuracy: 0.886694, Class Accuracy: 0.831851
+2020-03-16 18:50:24,385 - Model - INFO - Best Instance Accuracy: 0.893145, Class Accuracy: 0.844423
+2020-03-16 18:50:24,385 - Model - INFO - Epoch 78 (78/200):
+2020-03-16 18:51:37,789 - Model - INFO - Train Instance Accuracy: 0.902361
+2020-03-16 18:51:53,563 - Model - INFO - Test Instance Accuracy: 0.888306, Class Accuracy: 0.842838
+2020-03-16 18:51:53,563 - Model - INFO - Best Instance Accuracy: 0.893145, Class Accuracy: 0.844423
+2020-03-16 18:51:53,563 - Model - INFO - Epoch 79 (79/200):
+2020-03-16 18:53:07,040 - Model - INFO - Train Instance Accuracy: 0.904322
+2020-03-16 18:53:22,834 - Model - INFO - Test Instance Accuracy: 0.883871, Class Accuracy: 0.829507
+2020-03-16 18:53:22,835 - Model - INFO - Best Instance Accuracy: 0.893145, Class Accuracy: 0.844423
+2020-03-16 18:53:22,835 - Model - INFO - Epoch 80 (80/200):
+2020-03-16 18:54:36,222 - Model - INFO - Train Instance Accuracy: 0.904356
+2020-03-16 18:54:52,014 - Model - INFO - Test Instance Accuracy: 0.891935, Class Accuracy: 0.839862
+2020-03-16 18:54:52,014 - Model - INFO - Best Instance Accuracy: 0.893145, Class Accuracy: 0.844423
+2020-03-16 18:54:52,015 - Model - INFO - Epoch 81 (81/200):
+2020-03-16 18:56:05,487 - Model - INFO - Train Instance Accuracy: 0.906521
+2020-03-16 18:56:21,254 - Model - INFO - Test Instance Accuracy: 0.885887, Class Accuracy: 0.842907
+2020-03-16 18:56:21,254 - Model - INFO - Best Instance Accuracy: 0.893145, Class Accuracy: 0.844423
+2020-03-16 18:56:21,384 - Model - INFO - Epoch 82 (82/200):
+2020-03-16 18:57:34,833 - Model - INFO - Train Instance Accuracy: 0.910478
+2020-03-16 18:57:50,661 - Model - INFO - Test Instance Accuracy: 0.886290, Class Accuracy: 0.831006
+2020-03-16 18:57:50,661 - Model - INFO - Best Instance Accuracy: 0.893145, Class Accuracy: 0.844423
+2020-03-16 18:57:50,661 - Model - INFO - Epoch 83 (83/200):
+2020-03-16 18:59:04,256 - Model - INFO - Train Instance Accuracy: 0.910511
+2020-03-16 18:59:20,044 - Model - INFO - Test Instance Accuracy: 0.889113, Class Accuracy: 0.842319
+2020-03-16 18:59:20,044 - Model - INFO - Best Instance Accuracy: 0.893145, Class Accuracy: 0.844423
+2020-03-16 18:59:20,044 - Model - INFO - Epoch 84 (84/200):
+2020-03-16 19:00:33,496 - Model - INFO - Train Instance Accuracy: 0.909057
+2020-03-16 19:00:49,258 - Model - INFO - Test Instance Accuracy: 0.890323, Class Accuracy: 0.839113
+2020-03-16 19:00:49,258 - Model - INFO - Best Instance Accuracy: 0.893145, Class Accuracy: 0.844423
+2020-03-16 19:00:49,258 - Model - INFO - Epoch 85 (85/200):
+2020-03-16 19:02:02,759 - Model - INFO - Train Instance Accuracy: 0.913082
+2020-03-16 19:02:18,567 - Model - INFO - Test Instance Accuracy: 0.892742, Class Accuracy: 0.834959
+2020-03-16 19:02:18,568 - Model - INFO - Best Instance Accuracy: 0.893145, Class Accuracy: 0.844423
+2020-03-16 19:02:18,568 - Model - INFO - Epoch 86 (86/200):
+2020-03-16 19:03:32,112 - Model - INFO - Train Instance Accuracy: 0.911425
+2020-03-16 19:03:47,901 - Model - INFO - Test Instance Accuracy: 0.895968, Class Accuracy: 0.847967
+2020-03-16 19:03:47,901 - Model - INFO - Best Instance Accuracy: 0.895968, Class Accuracy: 0.847967
+2020-03-16 19:03:47,901 - Model - INFO - Save model...
+2020-03-16 19:03:47,901 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 19:03:48,596 - Model - INFO - Epoch 87 (87/200):
+2020-03-16 19:05:02,170 - Model - INFO - Train Instance Accuracy: 0.913251
+2020-03-16 19:05:18,023 - Model - INFO - Test Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:05:18,023 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:05:18,024 - Model - INFO - Save model...
+2020-03-16 19:05:18,024 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 19:05:18,513 - Model - INFO - Epoch 88 (88/200):
+2020-03-16 19:06:32,018 - Model - INFO - Train Instance Accuracy: 0.913488
+2020-03-16 19:06:47,818 - Model - INFO - Test Instance Accuracy: 0.889516, Class Accuracy: 0.843603
+2020-03-16 19:06:47,819 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:06:47,819 - Model - INFO - Epoch 89 (89/200):
+2020-03-16 19:08:01,463 - Model - INFO - Train Instance Accuracy: 0.909666
+2020-03-16 19:08:17,292 - Model - INFO - Test Instance Accuracy: 0.889113, Class Accuracy: 0.836929
+2020-03-16 19:08:17,293 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:08:17,293 - Model - INFO - Epoch 90 (90/200):
+2020-03-16 19:09:30,820 - Model - INFO - Train Instance Accuracy: 0.910883
+2020-03-16 19:09:46,586 - Model - INFO - Test Instance Accuracy: 0.882661, Class Accuracy: 0.840727
+2020-03-16 19:09:46,586 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:09:46,586 - Model - INFO - Epoch 91 (91/200):
+2020-03-16 19:11:00,120 - Model - INFO - Train Instance Accuracy: 0.913014
+2020-03-16 19:11:15,899 - Model - INFO - Test Instance Accuracy: 0.889113, Class Accuracy: 0.834993
+2020-03-16 19:11:15,899 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:11:16,036 - Model - INFO - Epoch 92 (92/200):
+2020-03-16 19:12:29,487 - Model - INFO - Train Instance Accuracy: 0.912033
+2020-03-16 19:12:45,284 - Model - INFO - Test Instance Accuracy: 0.883468, Class Accuracy: 0.826313
+2020-03-16 19:12:45,285 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:12:45,285 - Model - INFO - Epoch 93 (93/200):
+2020-03-16 19:13:58,606 - Model - INFO - Train Instance Accuracy: 0.916159
+2020-03-16 19:14:14,350 - Model - INFO - Test Instance Accuracy: 0.887097, Class Accuracy: 0.835783
+2020-03-16 19:14:14,350 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:14:14,350 - Model - INFO - Epoch 94 (94/200):
+2020-03-16 19:15:27,873 - Model - INFO - Train Instance Accuracy: 0.913318
+2020-03-16 19:15:43,675 - Model - INFO - Test Instance Accuracy: 0.879032, Class Accuracy: 0.832812
+2020-03-16 19:15:43,675 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:15:43,675 - Model - INFO - Epoch 95 (95/200):
+2020-03-16 19:16:57,268 - Model - INFO - Train Instance Accuracy: 0.910816
+2020-03-16 19:17:13,112 - Model - INFO - Test Instance Accuracy: 0.889919, Class Accuracy: 0.847250
+2020-03-16 19:17:13,112 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:17:13,112 - Model - INFO - Epoch 96 (96/200):
+2020-03-16 19:18:26,687 - Model - INFO - Train Instance Accuracy: 0.908415
+2020-03-16 19:18:42,493 - Model - INFO - Test Instance Accuracy: 0.883065, Class Accuracy: 0.829821
+2020-03-16 19:18:42,493 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:18:42,624 - Model - INFO - Epoch 97 (97/200):
+2020-03-16 19:19:56,151 - Model - INFO - Train Instance Accuracy: 0.911188
+2020-03-16 19:20:11,960 - Model - INFO - Test Instance Accuracy: 0.893548, Class Accuracy: 0.847567
+2020-03-16 19:20:11,960 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:20:11,960 - Model - INFO - Epoch 98 (98/200):
+2020-03-16 19:21:25,578 - Model - INFO - Train Instance Accuracy: 0.911830
+2020-03-16 19:21:41,376 - Model - INFO - Test Instance Accuracy: 0.885081, Class Accuracy: 0.834211
+2020-03-16 19:21:41,376 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:21:41,376 - Model - INFO - Epoch 99 (99/200):
+2020-03-16 19:22:54,977 - Model - INFO - Train Instance Accuracy: 0.915246
+2020-03-16 19:23:10,841 - Model - INFO - Test Instance Accuracy: 0.895565, Class Accuracy: 0.848314
+2020-03-16 19:23:10,841 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.852370
+2020-03-16 19:23:10,842 - Model - INFO - Epoch 100 (100/200):
+2020-03-16 19:24:24,397 - Model - INFO - Train Instance Accuracy: 0.919508
+2020-03-16 19:24:40,210 - Model - INFO - Test Instance Accuracy: 0.892339, Class Accuracy: 0.853141
+2020-03-16 19:24:40,211 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.853141
+2020-03-16 19:24:40,211 - Model - INFO - Epoch 101 (101/200):
+2020-03-16 19:25:53,738 - Model - INFO - Train Instance Accuracy: 0.917749
+2020-03-16 19:26:09,548 - Model - INFO - Test Instance Accuracy: 0.892339, Class Accuracy: 0.847929
+2020-03-16 19:26:09,548 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.853141
+2020-03-16 19:26:09,704 - Model - INFO - Epoch 102 (102/200):
+2020-03-16 19:27:23,279 - Model - INFO - Train Instance Accuracy: 0.918797
+2020-03-16 19:27:39,122 - Model - INFO - Test Instance Accuracy: 0.885887, Class Accuracy: 0.835922
+2020-03-16 19:27:39,122 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.853141
+2020-03-16 19:27:39,122 - Model - INFO - Epoch 103 (103/200):
+2020-03-16 19:28:52,880 - Model - INFO - Train Instance Accuracy: 0.919812
+2020-03-16 19:29:08,665 - Model - INFO - Test Instance Accuracy: 0.887903, Class Accuracy: 0.848357
+2020-03-16 19:29:08,665 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.853141
+2020-03-16 19:29:08,665 - Model - INFO - Epoch 104 (104/200):
+2020-03-16 19:30:22,264 - Model - INFO - Train Instance Accuracy: 0.921976
+2020-03-16 19:30:38,123 - Model - INFO - Test Instance Accuracy: 0.887097, Class Accuracy: 0.855316
+2020-03-16 19:30:38,123 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.855316
+2020-03-16 19:30:38,123 - Model - INFO - Epoch 105 (105/200):
+2020-03-16 19:31:51,761 - Model - INFO - Train Instance Accuracy: 0.919575
+2020-03-16 19:32:07,561 - Model - INFO - Test Instance Accuracy: 0.891532, Class Accuracy: 0.851996
+2020-03-16 19:32:07,561 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.855316
+2020-03-16 19:32:07,562 - Model - INFO - Epoch 106 (106/200):
+2020-03-16 19:33:21,199 - Model - INFO - Train Instance Accuracy: 0.924479
+2020-03-16 19:33:36,982 - Model - INFO - Test Instance Accuracy: 0.893548, Class Accuracy: 0.852515
+2020-03-16 19:33:36,983 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.855316
+2020-03-16 19:33:37,113 - Model - INFO - Epoch 107 (107/200):
+2020-03-16 19:34:50,668 - Model - INFO - Train Instance Accuracy: 0.921232
+2020-03-16 19:35:06,439 - Model - INFO - Test Instance Accuracy: 0.890323, Class Accuracy: 0.845827
+2020-03-16 19:35:06,439 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.855316
+2020-03-16 19:35:06,439 - Model - INFO - Epoch 108 (108/200):
+2020-03-16 19:36:19,931 - Model - INFO - Train Instance Accuracy: 0.920928
+2020-03-16 19:36:35,725 - Model - INFO - Test Instance Accuracy: 0.891532, Class Accuracy: 0.861382
+2020-03-16 19:36:35,725 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:36:35,726 - Model - INFO - Epoch 109 (109/200):
+2020-03-16 19:37:49,378 - Model - INFO - Train Instance Accuracy: 0.920894
+2020-03-16 19:38:05,211 - Model - INFO - Test Instance Accuracy: 0.896774, Class Accuracy: 0.857915
+2020-03-16 19:38:05,212 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:38:05,212 - Model - INFO - Save model...
+2020-03-16 19:38:05,212 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 19:38:05,760 - Model - INFO - Epoch 110 (110/200):
+2020-03-16 19:39:19,410 - Model - INFO - Train Instance Accuracy: 0.919440
+2020-03-16 19:39:35,212 - Model - INFO - Test Instance Accuracy: 0.895968, Class Accuracy: 0.843288
+2020-03-16 19:39:35,212 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:39:35,213 - Model - INFO - Epoch 111 (111/200):
+2020-03-16 19:40:48,803 - Model - INFO - Train Instance Accuracy: 0.920319
+2020-03-16 19:41:04,607 - Model - INFO - Test Instance Accuracy: 0.891532, Class Accuracy: 0.852621
+2020-03-16 19:41:04,607 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:41:04,737 - Model - INFO - Epoch 112 (112/200):
+2020-03-16 19:42:18,351 - Model - INFO - Train Instance Accuracy: 0.922991
+2020-03-16 19:42:34,161 - Model - INFO - Test Instance Accuracy: 0.890726, Class Accuracy: 0.853359
+2020-03-16 19:42:34,162 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:42:34,162 - Model - INFO - Epoch 113 (113/200):
+2020-03-16 19:43:47,697 - Model - INFO - Train Instance Accuracy: 0.919271
+2020-03-16 19:44:03,525 - Model - INFO - Test Instance Accuracy: 0.884274, Class Accuracy: 0.842805
+2020-03-16 19:44:03,525 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:44:03,525 - Model - INFO - Epoch 114 (114/200):
+2020-03-16 19:45:17,193 - Model - INFO - Train Instance Accuracy: 0.926069
+2020-03-16 19:45:32,979 - Model - INFO - Test Instance Accuracy: 0.889113, Class Accuracy: 0.844955
+2020-03-16 19:45:32,979 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:45:32,980 - Model - INFO - Epoch 115 (115/200):
+2020-03-16 19:46:46,525 - Model - INFO - Train Instance Accuracy: 0.923093
+2020-03-16 19:47:02,337 - Model - INFO - Test Instance Accuracy: 0.896371, Class Accuracy: 0.854961
+2020-03-16 19:47:02,337 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:47:02,337 - Model - INFO - Epoch 116 (116/200):
+2020-03-16 19:48:15,911 - Model - INFO - Train Instance Accuracy: 0.921909
+2020-03-16 19:48:31,666 - Model - INFO - Test Instance Accuracy: 0.887500, Class Accuracy: 0.844168
+2020-03-16 19:48:31,667 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:48:31,814 - Model - INFO - Epoch 117 (117/200):
+2020-03-16 19:49:45,301 - Model - INFO - Train Instance Accuracy: 0.922653
+2020-03-16 19:50:01,129 - Model - INFO - Test Instance Accuracy: 0.887500, Class Accuracy: 0.847593
+2020-03-16 19:50:01,129 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:50:01,129 - Model - INFO - Epoch 118 (118/200):
+2020-03-16 19:51:14,687 - Model - INFO - Train Instance Accuracy: 0.925629
+2020-03-16 19:51:30,587 - Model - INFO - Test Instance Accuracy: 0.890726, Class Accuracy: 0.847085
+2020-03-16 19:51:30,587 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:51:30,587 - Model - INFO - Epoch 119 (119/200):
+2020-03-16 19:52:44,188 - Model - INFO - Train Instance Accuracy: 0.924513
+2020-03-16 19:53:00,020 - Model - INFO - Test Instance Accuracy: 0.896371, Class Accuracy: 0.854107
+2020-03-16 19:53:00,020 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:53:00,020 - Model - INFO - Epoch 120 (120/200):
+2020-03-16 19:54:13,611 - Model - INFO - Train Instance Accuracy: 0.927050
+2020-03-16 19:54:29,435 - Model - INFO - Test Instance Accuracy: 0.883468, Class Accuracy: 0.834239
+2020-03-16 19:54:29,435 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:54:29,435 - Model - INFO - Epoch 121 (121/200):
+2020-03-16 19:55:43,063 - Model - INFO - Train Instance Accuracy: 0.924073
+2020-03-16 19:55:58,919 - Model - INFO - Test Instance Accuracy: 0.891935, Class Accuracy: 0.846155
+2020-03-16 19:55:58,919 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:55:59,051 - Model - INFO - Epoch 122 (122/200):
+2020-03-16 19:57:12,716 - Model - INFO - Train Instance Accuracy: 0.925900
+2020-03-16 19:57:28,609 - Model - INFO - Test Instance Accuracy: 0.893548, Class Accuracy: 0.851265
+2020-03-16 19:57:28,609 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:57:28,609 - Model - INFO - Epoch 123 (123/200):
+2020-03-16 19:58:42,194 - Model - INFO - Train Instance Accuracy: 0.930262
+2020-03-16 19:58:57,991 - Model - INFO - Test Instance Accuracy: 0.888306, Class Accuracy: 0.843740
+2020-03-16 19:58:57,991 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 19:58:57,992 - Model - INFO - Epoch 124 (124/200):
+2020-03-16 20:00:11,634 - Model - INFO - Train Instance Accuracy: 0.926305
+2020-03-16 20:00:27,443 - Model - INFO - Test Instance Accuracy: 0.891532, Class Accuracy: 0.845826
+2020-03-16 20:00:27,443 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 20:00:27,444 - Model - INFO - Epoch 125 (125/200):
+2020-03-16 20:01:41,006 - Model - INFO - Train Instance Accuracy: 0.929146
+2020-03-16 20:01:56,794 - Model - INFO - Test Instance Accuracy: 0.891935, Class Accuracy: 0.852092
+2020-03-16 20:01:56,794 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 20:01:56,794 - Model - INFO - Epoch 126 (126/200):
+2020-03-16 20:03:10,349 - Model - INFO - Train Instance Accuracy: 0.928605
+2020-03-16 20:03:26,115 - Model - INFO - Test Instance Accuracy: 0.891532, Class Accuracy: 0.846458
+2020-03-16 20:03:26,116 - Model - INFO - Best Instance Accuracy: 0.896774, Class Accuracy: 0.861382
+2020-03-16 20:03:26,245 - Model - INFO - Epoch 127 (127/200):
+2020-03-16 20:04:39,800 - Model - INFO - Train Instance Accuracy: 0.927151
+2020-03-16 20:04:55,652 - Model - INFO - Test Instance Accuracy: 0.900806, Class Accuracy: 0.857098
+2020-03-16 20:04:55,652 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:04:55,652 - Model - INFO - Save model...
+2020-03-16 20:04:55,652 - Model - INFO - Saving at /home/psa/Desktop/peter/zorder_concat/weights//best_model.pth
+2020-03-16 20:04:56,139 - Model - INFO - Epoch 128 (128/200):
+2020-03-16 20:06:09,636 - Model - INFO - Train Instance Accuracy: 0.934050
+2020-03-16 20:06:25,432 - Model - INFO - Test Instance Accuracy: 0.895565, Class Accuracy: 0.854068
+2020-03-16 20:06:25,433 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:06:25,433 - Model - INFO - Epoch 129 (129/200):
+2020-03-16 20:07:39,036 - Model - INFO - Train Instance Accuracy: 0.927692
+2020-03-16 20:07:54,836 - Model - INFO - Test Instance Accuracy: 0.889919, Class Accuracy: 0.842366
+2020-03-16 20:07:54,836 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:07:54,836 - Model - INFO - Epoch 130 (130/200):
+2020-03-16 20:09:08,342 - Model - INFO - Train Instance Accuracy: 0.930736
+2020-03-16 20:09:24,165 - Model - INFO - Test Instance Accuracy: 0.889919, Class Accuracy: 0.846099
+2020-03-16 20:09:24,165 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:09:24,165 - Model - INFO - Epoch 131 (131/200):
+2020-03-16 20:10:37,655 - Model - INFO - Train Instance Accuracy: 0.922856
+2020-03-16 20:10:53,470 - Model - INFO - Test Instance Accuracy: 0.893548, Class Accuracy: 0.846815
+2020-03-16 20:10:53,470 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:10:53,616 - Model - INFO - Epoch 132 (132/200):
+2020-03-16 20:12:07,175 - Model - INFO - Train Instance Accuracy: 0.931209
+2020-03-16 20:12:23,012 - Model - INFO - Test Instance Accuracy: 0.895161, Class Accuracy: 0.848770
+2020-03-16 20:12:23,012 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:12:23,012 - Model - INFO - Epoch 133 (133/200):
+2020-03-16 20:13:36,558 - Model - INFO - Train Instance Accuracy: 0.932596
+2020-03-16 20:13:52,348 - Model - INFO - Test Instance Accuracy: 0.893952, Class Accuracy: 0.856538
+2020-03-16 20:13:52,348 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:13:52,349 - Model - INFO - Epoch 134 (134/200):
+2020-03-16 20:15:05,952 - Model - INFO - Train Instance Accuracy: 0.930296
+2020-03-16 20:15:21,756 - Model - INFO - Test Instance Accuracy: 0.889516, Class Accuracy: 0.846964
+2020-03-16 20:15:21,757 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:15:21,757 - Model - INFO - Epoch 135 (135/200):
+2020-03-16 20:16:35,325 - Model - INFO - Train Instance Accuracy: 0.930837
+2020-03-16 20:16:51,149 - Model - INFO - Test Instance Accuracy: 0.894758, Class Accuracy: 0.851261
+2020-03-16 20:16:51,149 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:16:51,149 - Model - INFO - Epoch 136 (136/200):
+2020-03-16 20:18:04,706 - Model - INFO - Train Instance Accuracy: 0.930465
+2020-03-16 20:18:20,497 - Model - INFO - Test Instance Accuracy: 0.895968, Class Accuracy: 0.856867
+2020-03-16 20:18:20,497 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:18:20,619 - Model - INFO - Epoch 137 (137/200):
+2020-03-16 20:19:34,098 - Model - INFO - Train Instance Accuracy: 0.927523
+2020-03-16 20:19:49,947 - Model - INFO - Test Instance Accuracy: 0.895565, Class Accuracy: 0.858008
+2020-03-16 20:19:49,947 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:19:49,948 - Model - INFO - Epoch 138 (138/200):
+2020-03-16 20:21:03,528 - Model - INFO - Train Instance Accuracy: 0.928064
+2020-03-16 20:21:19,331 - Model - INFO - Test Instance Accuracy: 0.897177, Class Accuracy: 0.853125
+2020-03-16 20:21:19,332 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:21:19,332 - Model - INFO - Epoch 139 (139/200):
+2020-03-16 20:22:32,832 - Model - INFO - Train Instance Accuracy: 0.928910
+2020-03-16 20:22:48,610 - Model - INFO - Test Instance Accuracy: 0.892339, Class Accuracy: 0.841625
+2020-03-16 20:22:48,610 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:22:48,610 - Model - INFO - Epoch 140 (140/200):
+2020-03-16 20:24:02,259 - Model - INFO - Train Instance Accuracy: 0.934625
+2020-03-16 20:24:18,098 - Model - INFO - Test Instance Accuracy: 0.897581, Class Accuracy: 0.855104
+2020-03-16 20:24:18,098 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:24:18,098 - Model - INFO - Epoch 141 (141/200):
+2020-03-16 20:25:31,751 - Model - INFO - Train Instance Accuracy: 0.931615
+2020-03-16 20:25:47,558 - Model - INFO - Test Instance Accuracy: 0.891129, Class Accuracy: 0.842089
+2020-03-16 20:25:47,558 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:25:47,688 - Model - INFO - Epoch 142 (142/200):
+2020-03-16 20:27:01,364 - Model - INFO - Train Instance Accuracy: 0.932731
+2020-03-16 20:27:17,184 - Model - INFO - Test Instance Accuracy: 0.893952, Class Accuracy: 0.853804
+2020-03-16 20:27:17,184 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:27:17,184 - Model - INFO - Epoch 143 (143/200):
+2020-03-16 20:28:30,927 - Model - INFO - Train Instance Accuracy: 0.932968
+2020-03-16 20:28:46,731 - Model - INFO - Test Instance Accuracy: 0.889113, Class Accuracy: 0.851213
+2020-03-16 20:28:46,731 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:28:46,731 - Model - INFO - Epoch 144 (144/200):
+2020-03-16 20:30:00,474 - Model - INFO - Train Instance Accuracy: 0.930804
+2020-03-16 20:30:16,219 - Model - INFO - Test Instance Accuracy: 0.895968, Class Accuracy: 0.861207
+2020-03-16 20:30:16,219 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:30:16,219 - Model - INFO - Epoch 145 (145/200):
+2020-03-16 20:31:29,636 - Model - INFO - Train Instance Accuracy: 0.934558
+2020-03-16 20:31:45,406 - Model - INFO - Test Instance Accuracy: 0.894355, Class Accuracy: 0.855541
+2020-03-16 20:31:45,407 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:31:45,407 - Model - INFO - Epoch 146 (146/200):
+2020-03-16 20:32:58,900 - Model - INFO - Train Instance Accuracy: 0.932562
+2020-03-16 20:33:14,702 - Model - INFO - Test Instance Accuracy: 0.893145, Class Accuracy: 0.853659
+2020-03-16 20:33:14,703 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:33:14,834 - Model - INFO - Epoch 147 (147/200):
+2020-03-16 20:34:28,257 - Model - INFO - Train Instance Accuracy: 0.933644
+2020-03-16 20:34:44,030 - Model - INFO - Test Instance Accuracy: 0.894758, Class Accuracy: 0.856138
+2020-03-16 20:34:44,030 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:34:44,030 - Model - INFO - Epoch 148 (148/200):
+2020-03-16 20:35:57,674 - Model - INFO - Train Instance Accuracy: 0.936654
+2020-03-16 20:36:13,525 - Model - INFO - Test Instance Accuracy: 0.889919, Class Accuracy: 0.852710
+2020-03-16 20:36:13,525 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:36:13,525 - Model - INFO - Epoch 149 (149/200):
+2020-03-16 20:37:27,059 - Model - INFO - Train Instance Accuracy: 0.938176
+2020-03-16 20:37:42,873 - Model - INFO - Test Instance Accuracy: 0.890726, Class Accuracy: 0.847591
+2020-03-16 20:37:42,873 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:37:42,873 - Model - INFO - Epoch 150 (150/200):
+2020-03-16 20:38:56,281 - Model - INFO - Train Instance Accuracy: 0.933949
+2020-03-16 20:39:12,110 - Model - INFO - Test Instance Accuracy: 0.889919, Class Accuracy: 0.851575
+2020-03-16 20:39:12,110 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:39:12,110 - Model - INFO - Epoch 151 (151/200):
+2020-03-16 20:40:25,737 - Model - INFO - Train Instance Accuracy: 0.934591
+2020-03-16 20:40:41,508 - Model - INFO - Test Instance Accuracy: 0.883065, Class Accuracy: 0.841942
+2020-03-16 20:40:41,509 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:40:41,638 - Model - INFO - Epoch 152 (152/200):
+2020-03-16 20:41:55,233 - Model - INFO - Train Instance Accuracy: 0.934963
+2020-03-16 20:42:11,042 - Model - INFO - Test Instance Accuracy: 0.892742, Class Accuracy: 0.846233
+2020-03-16 20:42:11,043 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:42:11,043 - Model - INFO - Epoch 153 (153/200):
+2020-03-16 20:43:24,586 - Model - INFO - Train Instance Accuracy: 0.932596
+2020-03-16 20:43:40,431 - Model - INFO - Test Instance Accuracy: 0.890726, Class Accuracy: 0.851062
+2020-03-16 20:43:40,431 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:43:40,431 - Model - INFO - Epoch 154 (154/200):
+2020-03-16 20:44:54,065 - Model - INFO - Train Instance Accuracy: 0.934017
+2020-03-16 20:45:09,856 - Model - INFO - Test Instance Accuracy: 0.893548, Class Accuracy: 0.857862
+2020-03-16 20:45:09,856 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:45:09,856 - Model - INFO - Epoch 155 (155/200):
+2020-03-16 20:46:23,475 - Model - INFO - Train Instance Accuracy: 0.934727
+2020-03-16 20:46:39,314 - Model - INFO - Test Instance Accuracy: 0.891129, Class Accuracy: 0.847911
+2020-03-16 20:46:39,314 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:46:39,314 - Model - INFO - Epoch 156 (156/200):
+2020-03-16 20:47:53,006 - Model - INFO - Train Instance Accuracy: 0.935031
+2020-03-16 20:48:08,878 - Model - INFO - Test Instance Accuracy: 0.891129, Class Accuracy: 0.856849
+2020-03-16 20:48:08,878 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:48:09,001 - Model - INFO - Epoch 157 (157/200):
+2020-03-16 20:49:22,564 - Model - INFO - Train Instance Accuracy: 0.936688
+2020-03-16 20:49:38,424 - Model - INFO - Test Instance Accuracy: 0.887903, Class Accuracy: 0.841120
+2020-03-16 20:49:38,424 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:49:38,424 - Model - INFO - Epoch 158 (158/200):
+2020-03-16 20:50:52,004 - Model - INFO - Train Instance Accuracy: 0.937703
+2020-03-16 20:51:07,800 - Model - INFO - Test Instance Accuracy: 0.889516, Class Accuracy: 0.850271
+2020-03-16 20:51:07,800 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:51:07,801 - Model - INFO - Epoch 159 (159/200):
+2020-03-16 20:52:21,529 - Model - INFO - Train Instance Accuracy: 0.933002
+2020-03-16 20:52:37,413 - Model - INFO - Test Instance Accuracy: 0.892742, Class Accuracy: 0.844386
+2020-03-16 20:52:37,413 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:52:37,413 - Model - INFO - Epoch 160 (160/200):
+2020-03-16 20:53:51,103 - Model - INFO - Train Instance Accuracy: 0.936993
+2020-03-16 20:54:06,888 - Model - INFO - Test Instance Accuracy: 0.889516, Class Accuracy: 0.846802
+2020-03-16 20:54:06,888 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:54:06,888 - Model - INFO - Epoch 161 (161/200):
+2020-03-16 20:55:20,548 - Model - INFO - Train Instance Accuracy: 0.939732
+2020-03-16 20:55:36,390 - Model - INFO - Test Instance Accuracy: 0.895161, Class Accuracy: 0.853469
+2020-03-16 20:55:36,390 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:55:36,524 - Model - INFO - Epoch 162 (162/200):
+2020-03-16 20:56:50,124 - Model - INFO - Train Instance Accuracy: 0.937196
+2020-03-16 20:57:05,932 - Model - INFO - Test Instance Accuracy: 0.894758, Class Accuracy: 0.853333
+2020-03-16 20:57:05,932 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:57:05,933 - Model - INFO - Epoch 163 (163/200):
+2020-03-16 20:58:19,435 - Model - INFO - Train Instance Accuracy: 0.935403
+2020-03-16 20:58:35,316 - Model - INFO - Test Instance Accuracy: 0.896774, Class Accuracy: 0.850511
+2020-03-16 20:58:35,316 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 20:58:35,317 - Model - INFO - Epoch 164 (164/200):
+2020-03-16 20:59:48,895 - Model - INFO - Train Instance Accuracy: 0.939428
+2020-03-16 21:00:04,764 - Model - INFO - Test Instance Accuracy: 0.889919, Class Accuracy: 0.852697
+2020-03-16 21:00:04,764 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:00:04,765 - Model - INFO - Epoch 165 (165/200):
+2020-03-16 21:01:18,513 - Model - INFO - Train Instance Accuracy: 0.938379
+2020-03-16 21:01:34,306 - Model - INFO - Test Instance Accuracy: 0.894758, Class Accuracy: 0.853925
+2020-03-16 21:01:34,306 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:01:34,306 - Model - INFO - Epoch 166 (166/200):
+2020-03-16 21:02:47,932 - Model - INFO - Train Instance Accuracy: 0.938650
+2020-03-16 21:03:03,809 - Model - INFO - Test Instance Accuracy: 0.891129, Class Accuracy: 0.849860
+2020-03-16 21:03:03,809 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:03:03,940 - Model - INFO - Epoch 167 (167/200):
+2020-03-16 21:04:17,569 - Model - INFO - Train Instance Accuracy: 0.939597
+2020-03-16 21:04:33,391 - Model - INFO - Test Instance Accuracy: 0.893548, Class Accuracy: 0.857528
+2020-03-16 21:04:33,391 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:04:33,391 - Model - INFO - Epoch 168 (168/200):
+2020-03-16 21:05:47,147 - Model - INFO - Train Instance Accuracy: 0.938481
+2020-03-16 21:06:02,951 - Model - INFO - Test Instance Accuracy: 0.892742, Class Accuracy: 0.853430
+2020-03-16 21:06:02,951 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:06:02,951 - Model - INFO - Epoch 169 (169/200):
+2020-03-16 21:07:16,706 - Model - INFO - Train Instance Accuracy: 0.937669
+2020-03-16 21:07:32,549 - Model - INFO - Test Instance Accuracy: 0.898387, Class Accuracy: 0.859455
+2020-03-16 21:07:32,550 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:07:32,550 - Model - INFO - Epoch 170 (170/200):
+2020-03-16 21:08:46,230 - Model - INFO - Train Instance Accuracy: 0.940611
+2020-03-16 21:09:02,099 - Model - INFO - Test Instance Accuracy: 0.892742, Class Accuracy: 0.854057
+2020-03-16 21:09:02,099 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:09:02,100 - Model - INFO - Epoch 171 (171/200):
+2020-03-16 21:10:15,719 - Model - INFO - Train Instance Accuracy: 0.936891
+2020-03-16 21:10:31,586 - Model - INFO - Test Instance Accuracy: 0.889919, Class Accuracy: 0.847606
+2020-03-16 21:10:31,586 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:10:31,723 - Model - INFO - Epoch 172 (172/200):
+2020-03-16 21:11:45,308 - Model - INFO - Train Instance Accuracy: 0.940104
+2020-03-16 21:12:01,165 - Model - INFO - Test Instance Accuracy: 0.890323, Class Accuracy: 0.852299
+2020-03-16 21:12:01,165 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:12:01,165 - Model - INFO - Epoch 173 (173/200):
+2020-03-16 21:13:22,719 - Model - INFO - Train Instance Accuracy: 0.939326
+2020-03-16 21:13:38,486 - Model - INFO - Test Instance Accuracy: 0.888306, Class Accuracy: 0.853698
+2020-03-16 21:13:38,486 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:13:38,486 - Model - INFO - Epoch 174 (174/200):
+2020-03-16 21:14:52,110 - Model - INFO - Train Instance Accuracy: 0.940950
+2020-03-16 21:15:07,975 - Model - INFO - Test Instance Accuracy: 0.894355, Class Accuracy: 0.855902
+2020-03-16 21:15:07,975 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:15:07,975 - Model - INFO - Epoch 175 (175/200):
+2020-03-16 21:16:21,894 - Model - INFO - Train Instance Accuracy: 0.937669
+2020-03-16 21:16:37,725 - Model - INFO - Test Instance Accuracy: 0.890323, Class Accuracy: 0.851875
+2020-03-16 21:16:37,725 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:16:37,726 - Model - INFO - Epoch 176 (176/200):
+2020-03-16 21:17:51,372 - Model - INFO - Train Instance Accuracy: 0.940747
+2020-03-16 21:18:07,200 - Model - INFO - Test Instance Accuracy: 0.893145, Class Accuracy: 0.855524
+2020-03-16 21:18:07,200 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:18:07,324 - Model - INFO - Epoch 177 (177/200):
+2020-03-16 21:19:20,946 - Model - INFO - Train Instance Accuracy: 0.941356
+2020-03-16 21:19:36,876 - Model - INFO - Test Instance Accuracy: 0.894758, Class Accuracy: 0.859157
+2020-03-16 21:19:36,876 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:19:36,877 - Model - INFO - Epoch 178 (178/200):
+2020-03-16 21:20:50,566 - Model - INFO - Train Instance Accuracy: 0.943452
+2020-03-16 21:21:06,379 - Model - INFO - Test Instance Accuracy: 0.889113, Class Accuracy: 0.850312
+2020-03-16 21:21:06,379 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:21:06,379 - Model - INFO - Epoch 179 (179/200):
+2020-03-16 21:22:20,079 - Model - INFO - Train Instance Accuracy: 0.945177
+2020-03-16 21:22:35,958 - Model - INFO - Test Instance Accuracy: 0.893952, Class Accuracy: 0.854843
+2020-03-16 21:22:35,958 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:22:35,958 - Model - INFO - Epoch 180 (180/200):
+2020-03-16 21:23:49,628 - Model - INFO - Train Instance Accuracy: 0.941051
+2020-03-16 21:24:05,461 - Model - INFO - Test Instance Accuracy: 0.893952, Class Accuracy: 0.851413
+2020-03-16 21:24:05,461 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:24:05,461 - Model - INFO - Epoch 181 (181/200):
+2020-03-16 21:25:18,947 - Model - INFO - Train Instance Accuracy: 0.942100
+2020-03-16 21:25:34,717 - Model - INFO - Test Instance Accuracy: 0.891935, Class Accuracy: 0.852042
+2020-03-16 21:25:34,717 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:25:34,848 - Model - INFO - Epoch 182 (182/200):
+2020-03-16 21:26:48,413 - Model - INFO - Train Instance Accuracy: 0.940645
+2020-03-16 21:27:04,180 - Model - INFO - Test Instance Accuracy: 0.894355, Class Accuracy: 0.851069
+2020-03-16 21:27:04,180 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:27:04,180 - Model - INFO - Epoch 183 (183/200):
+2020-03-16 21:28:18,134 - Model - INFO - Train Instance Accuracy: 0.941897
+2020-03-16 21:28:34,154 - Model - INFO - Test Instance Accuracy: 0.891935, Class Accuracy: 0.856815
+2020-03-16 21:28:34,154 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:28:34,154 - Model - INFO - Epoch 184 (184/200):
+2020-03-16 21:29:47,767 - Model - INFO - Train Instance Accuracy: 0.940713
+2020-03-16 21:30:03,535 - Model - INFO - Test Instance Accuracy: 0.885484, Class Accuracy: 0.836439
+2020-03-16 21:30:03,535 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:30:03,535 - Model - INFO - Epoch 185 (185/200):
+2020-03-16 21:31:17,117 - Model - INFO - Train Instance Accuracy: 0.944467
+2020-03-16 21:31:32,956 - Model - INFO - Test Instance Accuracy: 0.891532, Class Accuracy: 0.845904
+2020-03-16 21:31:32,957 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.861382
+2020-03-16 21:31:32,957 - Model - INFO - Epoch 186 (186/200):
+2020-03-16 21:32:46,665 - Model - INFO - Train Instance Accuracy: 0.942302
+2020-03-16 21:33:02,439 - Model - INFO - Test Instance Accuracy: 0.897177, Class Accuracy: 0.866179
+2020-03-16 21:33:02,439 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:33:02,574 - Model - INFO - Epoch 187 (187/200):
+2020-03-16 21:34:16,205 - Model - INFO - Train Instance Accuracy: 0.941356
+2020-03-16 21:34:32,208 - Model - INFO - Test Instance Accuracy: 0.895161, Class Accuracy: 0.853415
+2020-03-16 21:34:32,208 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:34:32,208 - Model - INFO - Epoch 188 (188/200):
+2020-03-16 21:35:45,892 - Model - INFO - Train Instance Accuracy: 0.942539
+2020-03-16 21:36:01,829 - Model - INFO - Test Instance Accuracy: 0.891532, Class Accuracy: 0.850316
+2020-03-16 21:36:01,829 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:36:01,830 - Model - INFO - Epoch 189 (189/200):
+2020-03-16 21:37:15,563 - Model - INFO - Train Instance Accuracy: 0.943452
+2020-03-16 21:37:31,413 - Model - INFO - Test Instance Accuracy: 0.895161, Class Accuracy: 0.855028
+2020-03-16 21:37:31,413 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:37:31,413 - Model - INFO - Epoch 190 (190/200):
+2020-03-16 21:38:45,201 - Model - INFO - Train Instance Accuracy: 0.941998
+2020-03-16 21:39:00,978 - Model - INFO - Test Instance Accuracy: 0.892742, Class Accuracy: 0.858705
+2020-03-16 21:39:00,978 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:39:00,978 - Model - INFO - Epoch 191 (191/200):
+2020-03-16 21:40:14,798 - Model - INFO - Train Instance Accuracy: 0.942776
+2020-03-16 21:40:30,657 - Model - INFO - Test Instance Accuracy: 0.894355, Class Accuracy: 0.859408
+2020-03-16 21:40:30,657 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:40:30,782 - Model - INFO - Epoch 192 (192/200):
+2020-03-16 21:41:44,583 - Model - INFO - Train Instance Accuracy: 0.943452
+2020-03-16 21:42:00,481 - Model - INFO - Test Instance Accuracy: 0.893145, Class Accuracy: 0.849295
+2020-03-16 21:42:00,481 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:42:00,481 - Model - INFO - Epoch 193 (193/200):
+2020-03-16 21:43:14,286 - Model - INFO - Train Instance Accuracy: 0.942844
+2020-03-16 21:43:30,182 - Model - INFO - Test Instance Accuracy: 0.889113, Class Accuracy: 0.850474
+2020-03-16 21:43:30,182 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:43:30,182 - Model - INFO - Epoch 194 (194/200):
+2020-03-16 21:44:44,134 - Model - INFO - Train Instance Accuracy: 0.943249
+2020-03-16 21:44:59,984 - Model - INFO - Test Instance Accuracy: 0.888710, Class Accuracy: 0.857468
+2020-03-16 21:44:59,984 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:44:59,984 - Model - INFO - Epoch 195 (195/200):
+2020-03-16 21:46:13,984 - Model - INFO - Train Instance Accuracy: 0.946530
+2020-03-16 21:46:29,870 - Model - INFO - Test Instance Accuracy: 0.900000, Class Accuracy: 0.858166
+2020-03-16 21:46:29,870 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:46:29,870 - Model - INFO - Epoch 196 (196/200):
+2020-03-16 21:47:43,871 - Model - INFO - Train Instance Accuracy: 0.942945
+2020-03-16 21:47:59,916 - Model - INFO - Test Instance Accuracy: 0.889113, Class Accuracy: 0.843549
+2020-03-16 21:47:59,916 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:48:00,045 - Model - INFO - Epoch 197 (197/200):
+2020-03-16 21:49:13,781 - Model - INFO - Train Instance Accuracy: 0.943791
+2020-03-16 21:49:29,823 - Model - INFO - Test Instance Accuracy: 0.894758, Class Accuracy: 0.856054
+2020-03-16 21:49:29,823 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:49:29,823 - Model - INFO - Epoch 198 (198/200):
+2020-03-16 21:50:43,714 - Model - INFO - Train Instance Accuracy: 0.946124
+2020-03-16 21:50:59,578 - Model - INFO - Test Instance Accuracy: 0.891935, Class Accuracy: 0.846335
+2020-03-16 21:50:59,578 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:50:59,579 - Model - INFO - Epoch 199 (199/200):
+2020-03-16 21:52:13,349 - Model - INFO - Train Instance Accuracy: 0.943689
+2020-03-16 21:52:29,208 - Model - INFO - Test Instance Accuracy: 0.892339, Class Accuracy: 0.853380
+2020-03-16 21:52:29,208 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:52:29,208 - Model - INFO - Epoch 200 (200/200):
+2020-03-16 21:53:43,143 - Model - INFO - Train Instance Accuracy: 0.942539
+2020-03-16 21:53:58,971 - Model - INFO - Test Instance Accuracy: 0.892339, Class Accuracy: 0.858380
+2020-03-16 21:53:58,972 - Model - INFO - Best Instance Accuracy: 0.900806, Class Accuracy: 0.866179
+2020-03-16 21:53:58,972 - Model - INFO - End of training...
