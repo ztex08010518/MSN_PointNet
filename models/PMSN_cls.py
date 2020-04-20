@@ -24,7 +24,7 @@ def norm_feature(feature):
     return x_normalized
 
 class PMSN_concat_cls(nn.Module):
-    def __init__(self, n_class = 40, num_points = 8192, bottleneck_size = 1024, n_primitives = 16):
+    def __init__(self, n_class = 40, num_points = 8192, bottleneck_size = 1024, n_primitives = 16, norm_mode = 'none', a = 1, b = 1):
         super(PMSN_concat_cls, self).__init__()
 
         # PointNet 
@@ -34,12 +34,20 @@ class PMSN_concat_cls(nn.Module):
         self.num_points = num_points
         self.bottleneck_size = bottleneck_size
         self.n_primitives = n_primitives
+        self.norm_mode = norm_mode
+        self.a = a
+        self.b = b
+
         self.MSN_encoder = nn.Sequential(
             PointNetfeat(num_points, global_feat=True),
             nn.Linear(1024, self.bottleneck_size),
             nn.BatchNorm1d(self.bottleneck_size),
             nn.ReLU()
         )
+
+        self.alpha = nn.Parameter(torch.FloatTensor([50]))
+        self.beta = nn.Parameter(torch.FloatTensor([1]))
+
         self.decoder = nn.ModuleList([PointGenCon(bottleneck_size = 2 +self.bottleneck_size) for i in range(0,self.n_primitives)])
         self.expansion = expansion.expansionPenaltyModule()
         
@@ -58,14 +66,25 @@ class PMSN_concat_cls(nn.Module):
         GFV = self.MSN_encoder(x) # GFV: (B, 1024)
         
         PN_feature, trans, trans_feat = self.PN_encoder(x) # x: (B, 1024)
+        if self.norm_mode == 'norm':
+            PN_feature = norm_feature(PN_feature)
+            GFV = norm_feature(GFV)
+            # print("Normalize both PN and GFV features")
+        elif self.norm_mode == 'ab':
+            PN_feature = PN_feature * self.a
+            GFV = GFV * self.b
+            # print("PN features times {}, GFV features times {}".format(self.a, self.b))
+        elif self.norm_mode == 'learn':
+            PN_feature = PN_feature * self.alpha
+            GFV = GFV * self.beta
+            print("alpha: {}, beta: {}".format(self.alpha.item(), self.beta.item())) 
+        else:
+            assert self.norm_mode == 'none'
+            # print("No feature normalization")
         
-        #PN_feature = PN_feature * 0.1
-        #GFV = GFV * 10 
-        PN_feature = norm_feature(PN_feature)
-        GFV = norm_feature(GFV)
-
         # concatenate feature
         x = torch.cat((PN_feature, GFV), 1)
+        concat_feat = x
 
         # reconstruct coarse output
         outs = []
@@ -92,10 +111,10 @@ class PMSN_concat_cls(nn.Module):
         #### no expansion loss ####
         #loss_mst = 0
 
-        return pred, trans_feat, loss_mst, coarse_out, PN_feature, GFV
+        return pred, trans_feat, loss_mst, coarse_out, PN_feature, GFV, concat_feat
 
 class PMSN_pretrain_cls(nn.Module):
-    def __init__(self, n_class = 40, num_points = 8192, bottleneck_size = 1024, n_primitives = 16):
+    def __init__(self, n_class = 40, num_points = 8192, bottleneck_size = 1024, n_primitives = 16, norm_mode = 'none'):
         super(PMSN_pretrain_cls, self).__init__()
 
         # MSN
@@ -124,6 +143,14 @@ class PMSN_pretrain_cls(nn.Module):
         # get MSN feature
     
         GFV = self.MSN_encoder(x) # GFV: (B, 1024)
+        
+        if self.norm_mode == 'norm':
+            GFV = norm_feature(GFV)
+            # print("Normalize GFV feature")
+        else:
+            assert self.norm_mode == 'none'
+            # print("No feature normalization")
+            
 
         # reconstruct coarse output
         outs = []
@@ -152,7 +179,7 @@ class PMSN_pretrain_cls(nn.Module):
         #### no expansion loss ####
         #loss_mst = 0
         
-        return pred, None, loss_mst, coarse_out
+        return pred, None, loss_mst, coarse_out, GFV, None
 
 
 class get_loss(torch.nn.Module):

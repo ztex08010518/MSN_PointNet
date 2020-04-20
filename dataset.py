@@ -75,6 +75,7 @@ class DataLoader(Dataset):
             
             # points normalize
             points = pcd_normalize(point_set)
+            # points /= 2 #########################################
 
             #if len(self.cache) < self.cache_size:
             #    self.cache[index] = (point_set, cls)

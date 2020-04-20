@@ -26,7 +26,7 @@ from tqdm import tqdm
 parser = argparse.ArgumentParser()
 parser.add_argument('--batch_size', type=int, default=16, help='batch size in training [default: 24]')
 parser.add_argument('--workers', type=int, help='number of data loading workers', default=8)
-parser.add_argument('--nepoch', type=int, default=200, help='number of epochs to train for')
+parser.add_argument('--nepoch', type=int, default=300, help='number of epochs to train for')
 parser.add_argument('--learning_rate', default=0.001, type=float, help='learning rate in training [default: 0.001]')
 parser.add_argument('--gpu', type=str, required=True,  help='specify gpu device [default: 0]')
 parser.add_argument('--num_point', type=int, default=1024, help='Point Number [default: 1024]')
@@ -39,7 +39,11 @@ parser.add_argument('--n_primitives', type=int, default = 16,  help='number of s
 parser.add_argument('--output_dir', type=str, default='/eva_data/psa/code/outputs/MSN_PointNet',  help='root output dir for everything')
 parser.add_argument('--weight_dir', default= '', type=str, help='using which pretrained weight')
 parser.add_argument('--fix_mode', type=str, choices = ['open', 'fix_both', 'fix_MSN', 'fix_point'], required=True, help='pretrain-fix encoder, concat-fix both encoder, or fix MSN encoder')
-parser.add_argument('--dataset', type=str,default = 'ModelNet', choices = ['Modelnet', 'ShapeNet'], help='to choose input dataset' )
+parser.add_argument('--dataset', type=str, default = 'ModelNet', choices = ['Modelnet', 'ShapeNet'], help='to choose input dataset' )
+parser.add_argument('--norm_mode', type=str, required=True, choices=['none', 'norm', 'ab', 'learn'], help='choose which normalization mode')
+parser.add_argument('--a', type=int, default=1)
+parser.add_argument('--b', type=int, default=1)
+
 
 opt = parser.parse_args()
 print (opt)
@@ -67,7 +71,7 @@ def test(model, loader, num_class=40):
         points = points.transpose(2, 1)
         points, target = points.cuda(), target.cuda()
         classifier = model.eval()
-        pred, _, _, _, _, _ = classifier(points)
+        pred, _, _, _, _, _, _ = classifier(points)
         pred_choice = pred.data.max(1)[1]
         for cat in np.unique(target.cpu()):
             classacc = pred_choice[target==cat].eq(target[target==cat].long().data).cpu().sum()
@@ -108,10 +112,16 @@ if __name__ == "__main__":
             dir_names = opt.weight_dir.split('/')
             opt.MSN_mode =  dir_names[-2] if dir_names[-1] == '' else dir_names[-1]
 
-    #postfix_path = '_'.join([opt.method, opt.MSN_mode])
-    
-    dir_name = os.path.join(opt.output_dir, opt.method, opt.fix_mode+'_'+opt.sparsify_mode, opt.MSN_mode+'_norm')
-    
+    if "ShapeNet_all" in opt.weight_dir:
+        dir_name = os.path.join(opt.output_dir, opt.method, "ShapeNet_all", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+opt.norm_mode)
+    elif "ModelNet40" in opt.weight_dir:
+        dir_name = os.path.join(opt.output_dir, opt.method, "ModelNet40", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+opt.norm_mode)
+    else:
+        dir_name = os.path.join(opt.output_dir, opt.method, "ShapeNet", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+opt.norm_mode)
+
+    if opt.norm_mode == 'ab':
+        dir_name = dir_name + '_' + str(opt.a) + '_' + str(opt.b)
+
     if not os.path.exists(dir_name):
         os.makedirs(dir_name)
     
@@ -127,6 +137,10 @@ if __name__ == "__main__":
     
     checkpoints_dir = os.path.join(dir_name,'weights/')
     os.makedirs(checkpoints_dir, exist_ok=True)
+
+    features_dir = os.path.join(dir_name,'features/')
+    os.makedirs(features_dir, exist_ok=True)
+    
     log_dir = os.path.join(experiment_dir, "log")
     os.makedirs(log_dir, exist_ok=True)
 
@@ -162,11 +176,11 @@ if __name__ == "__main__":
     num_class = 40
 
     if opt.method == 'concat':
-        classifier = torch.nn.DataParallel(PMSN_concat_cls(num_class, 8192, 1024, 16)).cuda()
+        classifier = torch.nn.DataParallel(PMSN_concat_cls(num_class, 8192, 1024, 16, opt.norm_mode, opt.a, opt.b)).cuda()
         criterion = get_loss(trans_feat=True).cuda()
         print("===================Concat Mode===========================")
     elif opt.method == 'PointNet':
-        classifier = torch.nn.DataParallel(PointNet_cls(num_class, 8192, 1024, 16)).cuda()
+        classifier = torch.nn.DataParallel(PointNet_cls(num_class, 8192, 1024, 16, opt.norm_mode)).cuda()
         criterion = get_loss(trans_feat=True).cuda()
         print("===================PointNet Mode===========================")
     else:
@@ -274,6 +288,8 @@ if __name__ == "__main__":
     logger.info('Start training...')
     for epoch in range(opt.nepoch):
         log_string('Epoch %d (%d/%s):' % (global_epoch + 1, epoch + 1, opt.nepoch))
+        record_feature = []
+        record_gt = []
 
         # TRAIN MODE
         mean_correct = []
@@ -293,7 +309,11 @@ if __name__ == "__main__":
 
             # Start training
             classifier.module.train()
-            pred, trans_feat, expansion_loss, coarse_out, PN_feature, GFV = classifier(points)
+            pred, trans_feat, expansion_loss, coarse_out, PN_feature, GFV, concat_feat = classifier(points)
+
+            record_feature.append(concat_feat.cpu().detach().numpy())
+            record_gt.append(target.long())
+            
             # print("PointNet: ", PN_feature.shape, type(PN_feature))
             # print(PN_feature.cpu())
             # print("GFV: ", GFV.shape, type(GFV))
@@ -311,6 +331,8 @@ if __name__ == "__main__":
             optimizer.step()
             global_step += 1
 
+
+        # record loss
         train_instance_acc = np.mean(mean_correct)
         record_save["train"]["instance_acc"].append(train_instance_acc)
         #record_save["train"]["expansion_loss"].append(expansion_loss.mean().item())
@@ -319,6 +341,11 @@ if __name__ == "__main__":
         #record_save["train"]["total_loss"].append(expansion_loss.mean().item()+loss.item())
         record_save["train"]["total_loss"].append(0)
     
+        # record features
+        np.save(features_dir+'/'+str(epoch)+"_features.npy", np.array(record_feature))
+        np.save(features_dir+'/'+str(epoch)+"_gt.npy", np.array(record_gt))
+
+        # show train accuracy
         log_string('Train Instance Accuracy: %f' % train_instance_acc)
 
         # TEST MODE
