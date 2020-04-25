@@ -33,18 +33,16 @@ parser.add_argument('--num_point', type=int, default=1024, help='Point Number [d
 parser.add_argument('--optimizer', type=str, default='Adam', help='optimizer for training [default: Adam]')
 parser.add_argument('--decay_rate', type=float, default=1e-4, help='decay rate [default: 1e-4]')
 parser.add_argument('--sparsify_mode', type=str, required=True, choices=['PN', 'random', 'fps', 'zorder', 'multizorder'], default='PN', help='PointNet input')
-parser.add_argument('--MSN_mode', type=str, required=True, choices=['MSN', 'random', 'fps', 'zorder', 'multizorder'], default='random', help='MSN trained on')
+parser.add_argument('--MSN_mode', type=str, required=True, choices=['MSN', 'zorder', 'multizorder'], default='MSN', help='MSN trained on')
 parser.add_argument('--method', type=str, default = 'pretrain', choices = ['pretrain', 'concat', 'PointNet'],required=True,  help='Which method to train')
 parser.add_argument('--n_primitives', type=int, default = 16,  help='number of surface elements')
 parser.add_argument('--output_dir', type=str, default='/eva_data/psa/code/outputs/MSN_PointNet',  help='root output dir for everything')
-parser.add_argument('--weight_dir', default= '', type=str, help='using which pretrained weight')
+parser.add_argument('--weight_dir', required=True, type=str, help='using which pretrained weight')
 parser.add_argument('--fix_mode', type=str, choices = ['open', 'fix_both', 'fix_MSN', 'fix_point'], required=True, help='pretrain-fix encoder, concat-fix both encoder, or fix MSN encoder')
-parser.add_argument('--dataset', type=str, default = 'ModelNet', choices = ['Modelnet', 'ShapeNet'], help='to choose input dataset' )
+parser.add_argument('--dataset', type=str, default = 'ModelNet', choices = ['ModelNet', 'ShapeNet'], help='to choose input dataset' )
 parser.add_argument('--norm_mode', type=str, required=True, choices=['none', 'norm', 'ab', 'learn'], help='choose which normalization mode')
 parser.add_argument('--a', type=float, default=1)
 parser.add_argument('--b', type=float, default=1)
-
-
 opt = parser.parse_args()
 print (opt)
 
@@ -89,11 +87,6 @@ def test(model, loader, num_class=40):
 
     return instance_acc, class_acc
 
-def save_results(experiment_dir):
-    results_dir = os.path.join(experiment_dir, "results")
-    os.makedirs(results_dir, exist_ok=True)
-    np.save(os.path.join(results_dir, "train_loss.npy"), record_save)   
-
 if __name__ == "__main__":
     def log_string(str):
         logger.info(str)
@@ -103,94 +96,71 @@ if __name__ == "__main__":
     os.environ["CUDA_VISIBLE_DEVICES"] = opt.gpu
 
     '''CREATE DIR'''
-    if opt.MSN_mode == 'random':
-        idx = opt.weight_dir.index("random")
-        opt.MSN_mode += opt.weight_dir[idx+6 : idx+8]
+    assert opt.MSN_mode in ['zorder', 'multizorder', 'MSN'], "MSN mode doesn't exist"
+    
+    # Output dir tree #################################################################################################################
+    dir_names = opt.weight_dir.split('/')
 
-    if opt.MSN_mode in ['zorder', 'multizorder', 'MSN']:
-        if opt.weight_dir != '':
-            dir_names = opt.weight_dir.split('/')
-            opt.MSN_mode =  dir_names[-2] if dir_names[-1] == '' else dir_names[-1]
+    MSN_weight =  dir_names[-2] if dir_names[-1] == '' else dir_names[-1]
+    MSN_dataset = dir_names[6]  ## e.g: /eva_data/psa/code/outputs/MSN/ShapeNet_all
+    assert MSN_dataset in ["ShapeNet_all", "ModelNet40", "ShapeNet"], "You might entered a wrong weight_dir!"
 
-    if "ShapeNet_all" in opt.weight_dir:
-        dir_name = os.path.join(opt.output_dir, opt.method,"ShapeNet_all", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+'_'+opt.norm_mode)
-    elif "ModelNet40" in opt.weight_dir:
-        dir_name = os.path.join(opt.output_dir, opt.method,"ModelNet40", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+'_'+opt.norm_mode)
-    else:
-        dir_name = os.path.join(opt.output_dir, opt.method,"ShapeNet", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+'_'+opt.norm_mode)
+    output_root = os.path.join(opt.output_dir, opt.method, MSN_dataset, opt.sparsify_mode, opt.fix_mode, MSN_weight+'_'+opt.norm_mode)
 
     if opt.norm_mode == 'ab' or opt.norm_mode == 'learn':
-        dir_name = dir_name + '_' + str(opt.a) + '_' + str(opt.b)
-        # dir_name = dir_name + '_norm_' + str(opt.a) + '_' + str(opt.b)
+        output_root = dir_name + '_' + str(opt.a) + '_' + str(opt.b)
 
-    if not os.path.exists(dir_name):
-        os.makedirs(dir_name)
+    os.makedirs(output_root, exist_ok=True) 
+
+
+    os.system('cp ./train.py %s' % output_root)
+    os.system('cp ./dataset.py %s' % output_root)
+    os.system('cp ./models/PMSN_cls.py %s' % output_root)
     
-    logname = os.path.join(dir_name, 'log.txt')
-    os.system('cp ./train.py %s' % dir_name)
-    os.system('cp ./dataset.py %s' % dir_name)
-    os.system('cp ./models/PMSN_cls.py %s' % dir_name)
-
-
-    timestr = str(datetime.datetime.now().strftime('%Y-%m-%d_%H-%M'))
-    experiment_dir = os.path.join(dir_name, "logs")
-    os.makedirs(experiment_dir, exist_ok=True)
-    
-    checkpoints_dir = os.path.join(dir_name,'weights/')
+    checkpoints_dir = os.path.join(output_root,'weights/')
     os.makedirs(checkpoints_dir, exist_ok=True)
 
-    features_dir = os.path.join(dir_name,'features/')
+    features_dir = os.path.join(output_root,'features/')
     os.makedirs(features_dir, exist_ok=True)
     
-    log_dir = os.path.join(experiment_dir, "log")
+    log_dir = os.path.join(output_root, "log")
     os.makedirs(log_dir, exist_ok=True)
 
-    '''LOG'''
+    # Log setting #####################################################################################################################
     logger = logging.getLogger("Model")
     logger.setLevel(logging.INFO)
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    file_handler = logging.FileHandler('%s/%s.txt' % (log_dir, opt.method))
+    file_handler = logging.FileHandler('%s/record.txt' % (log_dir))
     file_handler.setLevel(logging.INFO)
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
     log_string('PARAMETER ...')
     log_string(opt)
 
-    '''DATA LOADING'''
+    # Data Loading ###################################################################################################################
     log_string('Load dataset {} ...'.format(opt.dataset))
-    ModelNet_PATH = '/eva_data/psa/datasets/PointNet/ModelNet40_pcd/'
-    ShapeNet_PATH = '/eva_data/psa/datasets/MSN_PointNet/ShapeNetCore.v1'
-
-    if opt.dataset =='ModelNet':
-        TRAIN_DATASET = DataLoader(root=ModelNet_PATH, dataset= opt.dataset, sparsify_mode=opt.sparsify_mode, npoint=opt.num_point, split='train')
-        TEST_DATASET = DataLoader(root=ModelNet_PATH, dataset= opt.dataset, sparsify_mode=opt.sparsify_mode, npoint=opt.num_point, split='test')
-        trainDataLoader = torch.utils.data.DataLoader(TRAIN_DATASET, batch_size=opt.batch_size, shuffle=True, num_workers=4,drop_last=True)
-        testDataLoader = torch.utils.data.DataLoader(TEST_DATASET, batch_size=opt.batch_size, shuffle=False, num_workers=4,drop_last=True)
-    elif opt.dataset == 'ShapeNet':
-        TRAIN_DATASET = DataLoader(root=ShapeNet_PATH, dataset= opt.dataset, sparsify_mode=opt.sparsify_mode, npoint=opt.num_point, split='train')
-        TEST_DATASET = DataLoader(root=ShapeNet_PATH, dataset= opt.dataset, sparsify_mode=opt.sparsify_mode, npoint=opt.num_point, split='test')
-        trainDataLoader = torch.utils.data.DataLoader(TRAIN_DATASET, batch_size=opt.batch_size, shuffle=True, num_workers=4,drop_last=True)
-        testDataLoader = torch.utils.data.DataLoader(TEST_DATASET, batch_size=opt.batch_size, shuffle=False, num_workers=4,drop_last=True)
-    print(len(TRAIN_DATASET))
-######################################################################
-    '''MODEL LOADING'''
-    num_class = 40
-
+    Data_path = {
+                "ModelNet": '/eva_data/psa/datasets/PointNet/ModelNet40_pcd/',
+                "ShapeNet": '/eva_data/psa/datasets/MSN_PointNet/ShapeNetCore.v1'
+            }
+    TRAIN_DATASET = DataLoader(root=Data_path[opt.dataset], dataset= opt.dataset, sparsify_mode=opt.sparsify_mode, npoint=opt.num_point, split='train')
+    TEST_DATASET = DataLoader(root=Data_path[opt.dataset], dataset= opt.dataset, sparsify_mode=opt.sparsify_mode, npoint=opt.num_point, split='test')
+    trainDataLoader = torch.utils.data.DataLoader(TRAIN_DATASET, batch_size=opt.batch_size, shuffle=True, num_workers=4,drop_last=True)
+    testDataLoader = torch.utils.data.DataLoader(TEST_DATASET, batch_size=opt.batch_size, shuffle=False, num_workers=4,drop_last=True)
+    log_string("Dataset size", len(TRAIN_DATASET))
+    
+    # MODEL LOADING ##################################################################################################################
     if opt.method == 'concat':
-        classifier = torch.nn.DataParallel(PMSN_concat_cls(num_class, 8192, 1024, 16, opt.norm_mode, opt.a, opt.b)).cuda()
+        classifier = torch.nn.DataParallel(PMSN_concat_cls(num_class= 40, 8192, 1024, 16, opt.norm_mode, opt.a, opt.b)).cuda()
         criterion = get_loss(trans_feat=True).cuda()
-        print("===================Concat Mode===========================")
-    elif opt.method == 'PointNet':
-        classifier = torch.nn.DataParallel(PointNet_cls(num_class, 8192, 1024, 16, opt.norm_mode)).cuda()
-        criterion = get_loss(trans_feat=True).cuda()
-        print("===================PointNet Mode===========================")
+        log_string("===================Concat Mode===========================")
     else:
-        classifier = torch.nn.DataParallel(PMSN_pretrain_cls(num_class, 8192, 1024, 16)).cuda()
+        classifier = torch.nn.DataParallel(PMSN_pretrain_cls(num_class= 40, 8192, 1024, 16, opt.norm_mode)).cuda()
         criterion = get_loss(trans_feat=False).cuda()
-        print("===================Pretrain Mode===========================")
+        log_string("===================Pretrain Mode===========================")
     
 
-    ## load MSN
+    # load MSN weight ################################################################################################################
     try:
         if opt.MSN_mode == "MSN":
             if opt.weight_dir == '':
@@ -209,11 +179,6 @@ if __name__ == "__main__":
         save_state_dict_en = {'MSN_'+ k: v for k, v in save_model.items() if "encoder" in k}
         save_state_dict_de = {k: v for k, v in save_model.items() if "decoder" in k}
         
-        # for e_k, d_k in zip(save_state_dict_en.keys(), save_state_dict_de.keys()):
-        #     print("Encoder use pretrained weights: {}".format(e_k))
-        #     print("Decoder use pretrained weights: {}".format(d_k))
-        # ## change dict 'encoder' to 'MSN_encoder'
-
         model_state_dict.update(save_state_dict_en)
         model_state_dict.update(save_state_dict_de)
         classifier.module.load_state_dict(model_state_dict)
@@ -377,7 +342,7 @@ if __name__ == "__main__":
                 torch.save(state, savepath)
             if epoch % 20 == 0:
                 torch.save(state, os.path.join(str(checkpoints_dir), "model_%04d.pth" %(epoch)))
-                save_results(experiment_dir)
+                np.save(os.path.join(log_dir, "train_loss.npy"), record_save)   
             global_epoch += 1
 
         # Save training and testing results
