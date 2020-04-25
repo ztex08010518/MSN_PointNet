@@ -147,15 +147,16 @@ if __name__ == "__main__":
     TEST_DATASET = DataLoader(root=Data_path[opt.dataset], dataset= opt.dataset, sparsify_mode=opt.sparsify_mode, npoint=opt.num_point, split='test')
     trainDataLoader = torch.utils.data.DataLoader(TRAIN_DATASET, batch_size=opt.batch_size, shuffle=True, num_workers=4,drop_last=True)
     testDataLoader = torch.utils.data.DataLoader(TEST_DATASET, batch_size=opt.batch_size, shuffle=False, num_workers=4,drop_last=True)
-    log_string("Dataset size", len(TRAIN_DATASET))
+    log_string("Dataset size {}".format(len(TRAIN_DATASET)))
     
     # MODEL LOADING ##################################################################################################################
+    n_class = 40
     if opt.method == 'concat':
-        classifier = torch.nn.DataParallel(PMSN_concat_cls(num_class= 40, 8192, 1024, 16, opt.norm_mode, opt.a, opt.b)).cuda()
+        classifier = torch.nn.DataParallel(PMSN_concat_cls(n_class, 8192, 1024, 16, opt.norm_mode, opt.a, opt.b)).cuda()
         criterion = get_loss(trans_feat=True).cuda()
         log_string("===================Concat Mode===========================")
     else:
-        classifier = torch.nn.DataParallel(PMSN_pretrain_cls(num_class= 40, 8192, 1024, 16, opt.norm_mode)).cuda()
+        classifier = torch.nn.DataParallel(PMSN_pretrain_cls(n_class, 8192, 1024, 16, opt.norm_mode)).cuda()
         criterion = get_loss(trans_feat=False).cuda()
         log_string("===================Pretrain Mode===========================")
     
@@ -167,12 +168,10 @@ if __name__ == "__main__":
                 print("Use MSN pretrain weight")
                 save_model = torch.load('/eva_data/psa/code/MSN/trained_model/network.pth')
             else:
-                print("Use MSN {}".format(opt.weight_dir))
+                log_string("Use MSN {}".format(opt.weight_dir))
                 save_model = torch.load(os.path.join(opt.weight_dir,'weights/best_model.pth'))
-        elif opt.MSN_mode == 'PointNet':
-                print("Use PointNet pretrain in pretrain mode")
         else:
-            print("Use {} MSN pretrain weight".format(opt.MSN_mode))
+            log_string("MSN weight is stored in ", opt.weight_dir)
             save_model = torch.load(os.path.join(opt.weight_dir,'weights/best_model.pth'))
         print("load successful")
         model_state_dict = classifier.module.state_dict()
