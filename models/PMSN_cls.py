@@ -45,8 +45,8 @@ class PMSN_concat_cls(nn.Module):
             nn.ReLU()
         )
 
-        self.alpha = nn.Parameter(torch.FloatTensor([50]))
-        self.beta = nn.Parameter(torch.FloatTensor([1]))
+        self.alpha = nn.Parameter(torch.FloatTensor([self.a]))
+        self.beta = nn.Parameter(torch.FloatTensor([self.b]))
 
         self.decoder = nn.ModuleList([PointGenCon(bottleneck_size = 2 +self.bottleneck_size) for i in range(0,self.n_primitives)])
         self.expansion = expansion.expansionPenaltyModule()
@@ -77,6 +77,8 @@ class PMSN_concat_cls(nn.Module):
         elif self.norm_mode == 'learn':
             PN_feature = PN_feature * self.alpha
             GFV = GFV * self.beta
+            # PN_feature = norm_feature(PN_feature) * self.alpha
+            # GFV = norm_feature(GFV) * self.beta
             print("alpha: {}, beta: {}".format(self.alpha.item(), self.beta.item())) 
         else:
             assert self.norm_mode == 'none'
@@ -121,6 +123,7 @@ class PMSN_pretrain_cls(nn.Module):
         self.num_points = num_points
         self.bottleneck_size = bottleneck_size
         self.n_primitives = n_primitives
+        self.norm_mode = norm_mode
         self.MSN_encoder = nn.Sequential(
             PointNetfeat(num_points, global_feat=True),
             nn.Linear(1024, self.bottleneck_size),
@@ -179,7 +182,7 @@ class PMSN_pretrain_cls(nn.Module):
         #### no expansion loss ####
         #loss_mst = 0
         
-        return pred, None, loss_mst, coarse_out, GFV, None
+        return pred, None, loss_mst, coarse_out, None, GFV, GFV
 
 
 class get_loss(torch.nn.Module):

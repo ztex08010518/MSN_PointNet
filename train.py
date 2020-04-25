@@ -26,7 +26,7 @@ from tqdm import tqdm
 parser = argparse.ArgumentParser()
 parser.add_argument('--batch_size', type=int, default=16, help='batch size in training [default: 24]')
 parser.add_argument('--workers', type=int, help='number of data loading workers', default=8)
-parser.add_argument('--nepoch', type=int, default=300, help='number of epochs to train for')
+parser.add_argument('--nepoch', type=int, default=200, help='number of epochs to train for')
 parser.add_argument('--learning_rate', default=0.001, type=float, help='learning rate in training [default: 0.001]')
 parser.add_argument('--gpu', type=str, required=True,  help='specify gpu device [default: 0]')
 parser.add_argument('--num_point', type=int, default=1024, help='Point Number [default: 1024]')
@@ -41,8 +41,8 @@ parser.add_argument('--weight_dir', default= '', type=str, help='using which pre
 parser.add_argument('--fix_mode', type=str, choices = ['open', 'fix_both', 'fix_MSN', 'fix_point'], required=True, help='pretrain-fix encoder, concat-fix both encoder, or fix MSN encoder')
 parser.add_argument('--dataset', type=str, default = 'ModelNet', choices = ['Modelnet', 'ShapeNet'], help='to choose input dataset' )
 parser.add_argument('--norm_mode', type=str, required=True, choices=['none', 'norm', 'ab', 'learn'], help='choose which normalization mode')
-parser.add_argument('--a', type=int, default=1)
-parser.add_argument('--b', type=int, default=1)
+parser.add_argument('--a', type=float, default=1)
+parser.add_argument('--b', type=float, default=1)
 
 
 opt = parser.parse_args()
@@ -113,14 +113,15 @@ if __name__ == "__main__":
             opt.MSN_mode =  dir_names[-2] if dir_names[-1] == '' else dir_names[-1]
 
     if "ShapeNet_all" in opt.weight_dir:
-        dir_name = os.path.join(opt.output_dir, opt.method, "ShapeNet_all", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+opt.norm_mode)
+        dir_name = os.path.join(opt.output_dir, opt.method,"ShapeNet_all", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+'_'+opt.norm_mode)
     elif "ModelNet40" in opt.weight_dir:
-        dir_name = os.path.join(opt.output_dir, opt.method, "ModelNet40", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+opt.norm_mode)
+        dir_name = os.path.join(opt.output_dir, opt.method,"ModelNet40", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+'_'+opt.norm_mode)
     else:
-        dir_name = os.path.join(opt.output_dir, opt.method, "ShapeNet", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+opt.norm_mode)
+        dir_name = os.path.join(opt.output_dir, opt.method,"ShapeNet", opt.sparsify_mode, opt.fix_mode, opt.MSN_mode+'_'+opt.norm_mode)
 
-    if opt.norm_mode == 'ab':
+    if opt.norm_mode == 'ab' or opt.norm_mode == 'learn':
         dir_name = dir_name + '_' + str(opt.a) + '_' + str(opt.b)
+        # dir_name = dir_name + '_norm_' + str(opt.a) + '_' + str(opt.b)
 
     if not os.path.exists(dir_name):
         os.makedirs(dir_name)
@@ -225,12 +226,14 @@ if __name__ == "__main__":
     ## load PointNet
     if opt.method != "pretrain":
         try:
-            PN_weight = '/eva_data/psa/code/outputs/PointNet/classification_cache/'+opt.sparsify_mode+'/checkpoints/best_model.pth'
-            #save_model = torch.load('/eva_data/psa/code/outputs/PointNet/ShapeNet_cls/PN/checkpoints/best_model.pth')
-            #save_model = torch.load('/eva_data/psa/code/outputs/PointNet/classification_cache/zorder/checkpoints/best_model.pth')
+            model_path = "/eva_data/psa/code/outputs/PointNet/ModelNet40_cls/"+ opt.sparsify_mode+ "/checkpoints/best_model.pth"
+            save_model = torch.load(model_path)
             print("Loading Pointnet ",opt.sparsify_mode," pretrain successful")
+            print("PN weight is stroed in", model_path)
             model_state_dict = classifier.module.state_dict()
-            save_state_dict = {k: v for k, v in save_model.items() if "feat" in k}
+            save_state_dict = {k.replace("feat", "PN_encoder"): v for k, v in save_model["model_state_dict"].items() if "feat" in k}
+            # print(save_state_dict)
+
 
             model_state_dict.update(save_state_dict)
             classifier.module.load_state_dict(model_state_dict)
@@ -258,7 +261,6 @@ if __name__ == "__main__":
             for child in classifier.module.PN_encoder.children():
                 for param in child.parameters():
                     param.requires_grad = False
-            
 
     '''SETUP OPTIMIZER'''
     if opt.optimizer == 'Adam':
