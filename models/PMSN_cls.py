@@ -71,8 +71,8 @@ class PMSN_concat_cls(nn.Module):
             GFV = norm_feature(GFV)
             # print("Normalize both PN and GFV features")
         elif self.norm_mode == 'ab':
-            PN_feature = PN_feature * self.a
-            GFV = GFV * self.b
+            PN_feature = PN_feature * self.alpha
+            GFV = GFV * self.beta
             # print("PN features times {}, GFV features times {}".format(self.a, self.b))
         elif self.norm_mode == 'learn':
             PN_feature = PN_feature * self.alpha
@@ -184,6 +184,93 @@ class PMSN_pretrain_cls(nn.Module):
         
         return pred, None, loss_mst, coarse_out, None, GFV, GFV
 
+class PPose_concat_cls(nn.Module):
+    def __init__(self, n_class = 40, num_points = 8192, bottleneck_size = 1024, n_primitives = 16, norm_mode = 'none', a = 1, b = 1):
+        super(PPose_concat_cls, self).__init__()
+
+        # PointNet 
+        self.PN_encoder = PointNetEncoder(global_feat=True, feature_transform=True, channel=3)
+        # PPose
+        self.Pose_encoder = PointNetEncoder(global_feat=True, feature_transform=True, channel=3)
+        
+        self.alpha = nn.Parameter(torch.FloatTensor([self.a]))
+        self.beta = nn.Parameter(torch.FloatTensor([self.b]))
+
+        # cls
+        self.fc1 = nn.Linear(2048, 512)
+        self.fc2 = nn.Linear(512, 256)
+        self.fc3 = nn.Linear(256, n_class)
+        self.dropout = nn.Dropout(p=0.4)
+        self.bn1 = nn.BatchNorm1d(512)
+        self.bn2 = nn.BatchNorm1d(256)
+        self.relu = nn.ReLU()
+
+    def forward(self, x):
+
+        PN_feat, _, _ = self.PN_encoder(x) # x: (B, 1024)
+        Pose_feat, _, _ = self.Pose_encoder(x) # x: (B, 1024)
+        
+        if self.norm_mode == 'norm':
+            PN_feat = norm_feature(PN_feat)
+            Pose_feat = norm_feature(Pose_feat)
+            # print("Normalize both PN and GFV features")
+        elif self.norm_mode == 'ab':
+            PN_feat = PN_feat * self.alpha
+            Pose_feat = Pose_feat * self.beta
+            # print("PN features times {}, GFV features times {}".format(self.a, self.b))
+        elif self.norm_mode == 'learn':
+            PN_feat = PN_feat * self.alpha
+            Pose_feat = Pose_feat * self.beta
+            print("alpha: {}, beta: {}".format(self.alpha.item(), self.beta.item())) 
+        else:
+            assert self.norm_mode == 'none'
+            # print("No feature normalization")
+        
+        # concatenate feature
+        x = torch.cat((PN_feat, Pose_feat), 1)
+        concat_feat = x
+ 
+        # cls loss
+        x = F.relu(self.bn1(self.fc1(x)))
+        x = F.relu(self.bn2(self.dropout(self.fc2(x))))
+        x = self.fc3(x)
+        pred = F.log_softmax(x, dim=1)
+
+        return pred, None, None, None, PN_feat, Pose_feat, concat_feat
+
+
+class PPose_pretrain_cls(nn.Module):
+    def __init__(self, n_class = 40, num_points = 8192, bottleneck_size = 1024, n_primitives = 16, norm_mode = 'none'):
+        super(PPose_pretrain_cls, self).__init__()
+
+        # PPose
+        self.Pose_encoder = PointNetEncoder(global_feat=True, feature_transform=True, channel=3)
+        
+        # cls
+        self.fc1 = nn.Linear(1024, 512)
+        self.fc2 = nn.Linear(512, 256)
+        self.fc3 = nn.Linear(256, n_class)
+        self.dropout = nn.Dropout(p=0.4)
+        self.bn1 = nn.BatchNorm1d(512)
+        self.bn2 = nn.BatchNorm1d(256)
+        self.relu = nn.ReLU()
+
+    def forward(self, x):
+        # get Pose feature
+        Pose_feat, trans, trans_feat = self.Pose_encoder(x) # x: (B, 1024)
+        
+        if self.norm_mode == 'norm':
+            Pose_feat = norm_feature(Pose_feat)
+        else:
+            assert self.norm_mode == 'none'            
+
+        # cls loss
+        x = F.relu(self.bn1(self.fc1(Pose_feat)))
+        x = F.relu(self.bn2(self.dropout(self.fc2(x))))
+        x = self.fc3(x)
+        pred = F.log_softmax(x, dim=1)
+        
+        return pred, None, None, None, None, Pose_feat, Pose_feat
 
 class get_loss(torch.nn.Module):
     def __init__(self, mat_diff_loss_scale=0.001, trans_feat=False):
@@ -200,36 +287,3 @@ class get_loss(torch.nn.Module):
         else:
             return loss
 
-class PointNet_cls(nn.Module):
-    def __init__(self, n_class = 40, num_points = 8192, bottleneck_size = 1024, n_primitives = 16):
-        super(PointNet_cls, self).__init__()
-
-        # PointNet 
-        self.PN_encoder = PointNetEncoder(global_feat=True, feature_transform=True, channel=3)
-        
-        
-        # cls
-        self.fc1 = nn.Linear(1024, 512)
-        self.fc2 = nn.Linear(512, 256)
-        self.fc3 = nn.Linear(256, n_class)
-        self.dropout = nn.Dropout(p=0.4)
-        self.bn1 = nn.BatchNorm1d(512)
-        self.bn2 = nn.BatchNorm1d(256)
-        self.relu = nn.ReLU()
-
-    def forward(self, x):
-        # get PointNet feature
-        
-        x, trans, trans_feat = self.PN_encoder(x) # x: (B, 1024)
-        
-        # cls loss
-        x = F.relu(self.bn1(self.fc1(x)))
-        x = F.relu(self.bn2(self.dropout(self.fc2(x))))
-        x = self.fc3(x)
-        pred = F.log_softmax(x, dim=1)
-        
-        #### no expansion loss ####
-        loss_mst = 0
-        coarse_out = None
-
-        return pred, trans_feat, loss_mst, coarse_out

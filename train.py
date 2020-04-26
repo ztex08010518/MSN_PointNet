@@ -33,12 +33,12 @@ parser.add_argument('--num_point', type=int, default=1024, help='Point Number [d
 parser.add_argument('--optimizer', type=str, default='Adam', help='optimizer for training [default: Adam]')
 parser.add_argument('--decay_rate', type=float, default=1e-4, help='decay rate [default: 1e-4]')
 parser.add_argument('--sparsify_mode', type=str, required=True, choices=['PN', 'random', 'fps', 'zorder', 'multizorder'], default='PN', help='PointNet input')
-parser.add_argument('--MSN_mode', type=str, required=True, choices=['MSN', 'zorder', 'multizorder'], default='MSN', help='MSN trained on')
+parser.add_argument('--helping_model', type=str, required=True, choices=['MSN', '3DPoseNet'], default='MSN', help='Choose which model to help')
 parser.add_argument('--method', type=str, default = 'pretrain', choices = ['pretrain', 'concat', 'PointNet'],required=True,  help='Which method to train')
 parser.add_argument('--n_primitives', type=int, default = 16,  help='number of surface elements')
-parser.add_argument('--output_dir', type=str, default='/eva_data/psa/code/outputs/MSN_PointNet',  help='root output dir for everything')
+parser.add_argument('--output_dir', type=str, default='/eva_data/psa/code/outputs/',  help='root output dir for everything')
 parser.add_argument('--weight_dir', required=True, type=str, help='using which pretrained weight')
-parser.add_argument('--fix_mode', type=str, choices = ['open', 'fix_both', 'fix_MSN', 'fix_point'], required=True, help='pretrain-fix encoder, concat-fix both encoder, or fix MSN encoder')
+parser.add_argument('--fix_mode', type=str, choices = ['open', 'fix_both', 'fix_MSN', 'fix_Pose'], required=True, help='pretrain-fix encoder, concat-fix both encoder, or fix MSN encoder')
 parser.add_argument('--dataset', type=str, default = 'ModelNet', choices = ['ModelNet', 'ShapeNet'], help='to choose input dataset' )
 parser.add_argument('--norm_mode', type=str, required=True, choices=['none', 'norm', 'ab', 'learn'], help='choose which normalization mode')
 parser.add_argument('--a', type=float, default=1)
@@ -96,22 +96,26 @@ if __name__ == "__main__":
     os.environ["CUDA_VISIBLE_DEVICES"] = opt.gpu
 
     '''CREATE DIR'''
-    assert opt.MSN_mode in ['zorder', 'multizorder', 'MSN'], "MSN mode doesn't exist"
     
     # Output dir tree #################################################################################################################
     dir_names = opt.weight_dir.split('/')
+    output_dir = os.path.join(opt.output_dir, opt.helping_model+'_PointNet')
 
-    MSN_weight =  dir_names[-2] if dir_names[-1] == '' else dir_names[-1]
-    MSN_dataset = dir_names[6]  ## e.g: /eva_data/psa/code/outputs/MSN/ShapeNet_all
-    assert MSN_dataset in ["ShapeNet_all", "ModelNet40", "ShapeNet"], "You might entered a wrong weight_dir!"
+    if opt.helping_model == '3DPoseNet':
+        weight_mode = "TBD"
+        train_dataset = dir_names[6] ## e.g: /eva_data/psa/code/outputs/3DPoseNet/Car
+    
+    elif opt.helping_model == 'MSN':
+        weight_mode =  dir_names[-2] if dir_names[-1] == '' else dir_names[-1]
+        train_dataset = dir_names[6]  ## e.g: /eva_data/psa/code/outputs/MSN/ShapeNet_all
+        assert train_dataset in ["ShapeNet_all", "ModelNet40", "ShapeNet"], "You might entered a wrong weight_dir!"
 
-    output_root = os.path.join(opt.output_dir, opt.method, MSN_dataset, opt.sparsify_mode, opt.fix_mode, MSN_weight+'_'+opt.norm_mode)
+    output_root = os.path.join(output_dir, opt.method, train_dataset, opt.sparsify_mode, opt.fix_mode, weight_mode+'_'+opt.norm_mode)
 
     if opt.norm_mode == 'ab' or opt.norm_mode == 'learn':
         output_root = dir_name + '_' + str(opt.a) + '_' + str(opt.b)
 
     os.makedirs(output_root, exist_ok=True) 
-
 
     os.system('cp ./train.py %s' % output_root)
     os.system('cp ./dataset.py %s' % output_root)
@@ -151,43 +155,58 @@ if __name__ == "__main__":
     
     # MODEL LOADING ##################################################################################################################
     n_class = 40
-    if opt.method == 'concat':
-        classifier = torch.nn.DataParallel(PMSN_concat_cls(n_class, 8192, 1024, 16, opt.norm_mode, opt.a, opt.b)).cuda()
-        criterion = get_loss(trans_feat=True).cuda()
-        log_string("===================Concat Mode===========================")
-    else:
-        classifier = torch.nn.DataParallel(PMSN_pretrain_cls(n_class, 8192, 1024, 16, opt.norm_mode)).cuda()
-        criterion = get_loss(trans_feat=False).cuda()
-        log_string("===================Pretrain Mode===========================")
-    
+    if opt.helping_model == "MSN":
+        log_string("====================Now is MSN helping==========================")
+        if opt.method == 'concat':
+            classifier = torch.nn.DataParallel(PMSN_concat_cls(n_class, 8192, 1024, 16, opt.norm_mode, opt.a, opt.b)).cuda()
+            criterion = get_loss(trans_feat=True).cuda()
+            log_string("===================Concat Mode===========================")
+        else:
+            classifier = torch.nn.DataParallel(PMSN_pretrain_cls(n_class, 8192, 1024, 16, opt.norm_mode)).cuda()
+            criterion = get_loss(trans_feat=False).cuda()
+            log_string("===================Pretrain Mode===========================")
+    elif opt.helping_model == "3DPoseNet":
+        log_string("====================Now is 3DPoseNet helping==========================")
+        if opt.method == 'concat':
+            classifier = torch.nn.DataParallel(PPose_concat_cls(n_class, 8192, 1024, 16, opt.norm_mode, opt.a, opt.b)).cuda()
+            criterion = get_loss(trans_feat=True).cuda()
+            log_string("===================Concat Mode===========================")
+        else:
+            classifier = torch.nn.DataParallel(PPose_pretrain_cls(n_class, 8192, 1024, 16, opt.norm_mode)).cuda()
+            criterion = get_loss(trans_feat=False).cuda()
+            log_string("===================Pretrain Mode===========================")
 
     # load MSN weight ################################################################################################################
-    try:
-        if opt.MSN_mode == "MSN":
-            if opt.weight_dir == '':
-                print("Use MSN pretrain weight")
-                save_model = torch.load('/eva_data/psa/code/MSN/trained_model/network.pth')
-            else:
-                log_string("Use MSN {}".format(opt.weight_dir))
-                save_model = torch.load(os.path.join(opt.weight_dir,'weights/best_model.pth'))
-        else:
-            log_string("MSN weight is stored in ", opt.weight_dir)
+    if opt.helping_model == 'MSN':
+        try:
+            log_string("MSN weight is stored in {}".format(opt.weight_dir))
             save_model = torch.load(os.path.join(opt.weight_dir,'weights/best_model.pth'))
-        print("load successful")
-        model_state_dict = classifier.module.state_dict()
-        save_state_dict_en = {'MSN_'+ k: v for k, v in save_model.items() if "encoder" in k}
-        save_state_dict_de = {k: v for k, v in save_model.items() if "decoder" in k}
-        
-        model_state_dict.update(save_state_dict_en)
-        model_state_dict.update(save_state_dict_de)
-        classifier.module.load_state_dict(model_state_dict)
-        log_string('Use MSN pretrain model')
-    except Exception:
-        log_string('MSN: No existing model, starting training from scratch...')
-        print(sys.exc_info())
-        start_epoch = 0
-
-    ## load PointNet
+            print("load successful")
+            model_state_dict = classifier.module.state_dict()
+            save_state_dict_en = {'MSN_'+ k: v for k, v in save_model.items() if "encoder" in k}
+            save_state_dict_de = {k: v for k, v in save_model.items() if "decoder" in k}
+            
+            model_state_dict.update(save_state_dict_en)
+            model_state_dict.update(save_state_dict_de)
+            classifier.module.load_state_dict(model_state_dict)
+            log_string('Use MSN pretrain model')
+        except Exception:
+            log_string('MSN: No existing model, starting training from scratch...')
+            print(sys.exc_info())
+    elif opt.helping_model == '3DPoseNet':
+        try:
+            log_string("3DPoseNet weight is stored in {}".format(opt.weight_dir))
+            save_model = torch.load(os.path.join(opt.weight_dir, 'checkpoints/best_model.pth'))
+            print("load successful")
+            model_state_dict = classifier.module.state_dict()
+            save_state_dict = {k.replace("PN_encoder", "Pose_encoder"): v for k, v in save_model["model_state_dict"].items() if "PN_encoder" in k}
+            model_state_dict.update(save_state_dict)
+            classifier.module.load_state_dict(model_state_dict)
+            log_string('Use 3DPoseNet pretrain model')
+        except Exception:
+            log_string('PoseNet: No existing model, starting training from scratch...')
+            print(sys.exc_info())
+    # load PointNet weight ***********************************************************************************************************
     if opt.method != "pretrain":
         try:
             model_path = "/eva_data/psa/code/outputs/PointNet/ModelNet40_cls/"+ opt.sparsify_mode+ "/checkpoints/best_model.pth"
@@ -198,35 +217,37 @@ if __name__ == "__main__":
             save_state_dict = {k.replace("feat", "PN_encoder"): v for k, v in save_model["model_state_dict"].items() if "feat" in k}
             # print(save_state_dict)
 
-
             model_state_dict.update(save_state_dict)
             classifier.module.load_state_dict(model_state_dict)
             log_string('Use PointNet pretrain model')
         except Exception:
             log_string('PointNet: No existing model, starting training from scratch...')
             print(sys.exc_info())
-            start_epoch = 0
 
-    ## Fix model weights
-    if opt.fix_mode == 'fix_point':
-        print("Fix pretrain PointNet")
-        for child in classifier.module.PN_encoder.children():
+    # Fix model weights **************************************************************************************************************
+    if opt.fix_mode != 'open':
+        if opt.fix_mode == 'fix_MSN':
+            assert opt.helping_model == "MSN", "You are trying to fix a not exist network"
+            print("Fix MSN")
+            for child in classifier.module.MSN_encoder.children():
                 for param in child.parameters():
                     param.requires_grad = False
-    elif opt.fix_mode != 'open':
-        print("Fix MSN")
-        for child in classifier.module.MSN_encoder.children():
-            for param in child.parameters():
-                param.requires_grad = False
+
+        elif opt.fix_mode == 'fix_Pose':
+            assert opt.helping_model == "3DPoseNet", "You are trying to fix a not exist network"
+            print("Fix 3DPoseNet")
+            for child in classifier.module.Pose_encoder.children():
+                for param in child.parameters():
+                    param.requires_grad = False
 
         if opt.fix_mode == 'fix_both':
-            assert opt.method  == 'concat'
+            assert opt.method  == 'concat', "You should check your method, is it concat!?"
             print("Fix PointNet")
             for child in classifier.module.PN_encoder.children():
                 for param in child.parameters():
                     param.requires_grad = False
-
-    '''SETUP OPTIMIZER'''
+    
+    # SETUP OPTIMIZER ################################################################################################################
     if opt.optimizer == 'Adam':
         optimizer = torch.optim.Adam(
             filter(lambda p: p.requires_grad, classifier.module.parameters()),
@@ -242,7 +263,7 @@ if __name__ == "__main__":
             lr=0.01, 
             momentum=0.9
         )
-
+    ##################################################################################################################################
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.7)
     global_epoch = 0
     global_step = 0
