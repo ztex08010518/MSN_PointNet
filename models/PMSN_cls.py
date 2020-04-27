@@ -185,9 +185,13 @@ class PMSN_pretrain_cls(nn.Module):
         return pred, None, loss_mst, coarse_out, None, GFV, GFV
 
 class PPose_concat_cls(nn.Module):
-    def __init__(self, n_class = 40, num_points = 8192, bottleneck_size = 1024, n_primitives = 16, norm_mode = 'none', a = 1, b = 1):
+    def __init__(self, n_class = 40, norm_mode = 'none', a = 1, b = 1):
         super(PPose_concat_cls, self).__init__()
-
+        
+        self.norm_mode = norm_mode
+        self.a = a
+        self.b = b
+        
         # PointNet 
         self.PN_encoder = PointNetEncoder(global_feat=True, feature_transform=True, channel=3)
         # PPose
@@ -207,7 +211,7 @@ class PPose_concat_cls(nn.Module):
 
     def forward(self, x):
 
-        PN_feat, _, _ = self.PN_encoder(x) # x: (B, 1024)
+        PN_feat, _, trans_feat = self.PN_encoder(x) # x: (B, 1024)
         Pose_feat, _, _ = self.Pose_encoder(x) # x: (B, 1024)
         
         if self.norm_mode == 'norm':
@@ -236,11 +240,11 @@ class PPose_concat_cls(nn.Module):
         x = self.fc3(x)
         pred = F.log_softmax(x, dim=1)
 
-        return pred, None, None, None, PN_feat, Pose_feat, concat_feat
+        return pred, trans_feat, None, None, PN_feat, Pose_feat, concat_feat
 
 
 class PPose_pretrain_cls(nn.Module):
-    def __init__(self, n_class = 40, num_points = 8192, bottleneck_size = 1024, n_primitives = 16, norm_mode = 'none'):
+    def __init__(self, n_class = 40, norm_mode = 'none'):
         super(PPose_pretrain_cls, self).__init__()
 
         # PPose

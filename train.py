@@ -24,7 +24,7 @@ from tqdm import tqdm
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--batch_size', type=int, default=16, help='batch size in training [default: 24]')
+parser.add_argument('--batch_size', type=int, default=16, help='batch size in training [default: 16]')
 parser.add_argument('--workers', type=int, help='number of data loading workers', default=8)
 parser.add_argument('--nepoch', type=int, default=200, help='number of epochs to train for')
 parser.add_argument('--learning_rate', default=0.001, type=float, help='learning rate in training [default: 0.001]')
@@ -168,15 +168,15 @@ if __name__ == "__main__":
     elif opt.helping_model == "3DPoseNet":
         log_string("====================Now is 3DPoseNet helping==========================")
         if opt.method == 'concat':
-            classifier = torch.nn.DataParallel(PPose_concat_cls(n_class, 8192, 1024, 16, opt.norm_mode, opt.a, opt.b)).cuda()
+            classifier = torch.nn.DataParallel(PPose_concat_cls(n_class, opt.norm_mode, opt.a, opt.b)).cuda()
             criterion = get_loss(trans_feat=True).cuda()
             log_string("===================Concat Mode===========================")
         else:
-            classifier = torch.nn.DataParallel(PPose_pretrain_cls(n_class, 8192, 1024, 16, opt.norm_mode)).cuda()
+            classifier = torch.nn.DataParallel(PPose_pretrain_cls(n_class, opt.norm_mode)).cuda()
             criterion = get_loss(trans_feat=False).cuda()
             log_string("===================Pretrain Mode===========================")
 
-    # load MSN weight ################################################################################################################
+    # load helping model weight ######################################################################################################
     if opt.helping_model == 'MSN':
         try:
             log_string("MSN weight is stored in {}".format(opt.weight_dir))
@@ -199,7 +199,7 @@ if __name__ == "__main__":
             save_model = torch.load(os.path.join(opt.weight_dir, 'checkpoints/best_model.pth'))
             print("load successful")
             model_state_dict = classifier.module.state_dict()
-            save_state_dict = {k.replace("PN_encoder", "Pose_encoder"): v for k, v in save_model["model_state_dict"].items() if "PN_encoder" in k}
+            save_state_dict = {k.replace("module.PN_encoder", "Pose_encoder"): v for k, v in save_model["model_state_dict"].items() if "PN_encoder" in k}
             model_state_dict.update(save_state_dict)
             classifier.module.load_state_dict(model_state_dict)
             log_string('Use 3DPoseNet pretrain model')
@@ -215,7 +215,6 @@ if __name__ == "__main__":
             print("PN weight is stroed in", model_path)
             model_state_dict = classifier.module.state_dict()
             save_state_dict = {k.replace("feat", "PN_encoder"): v for k, v in save_model["model_state_dict"].items() if "feat" in k}
-            # print(save_state_dict)
 
             model_state_dict.update(save_state_dict)
             classifier.module.load_state_dict(model_state_dict)
@@ -226,15 +225,13 @@ if __name__ == "__main__":
 
     # Fix model weights **************************************************************************************************************
     if opt.fix_mode != 'open':
-        if opt.fix_mode == 'fix_MSN':
-            assert opt.helping_model == "MSN", "You are trying to fix a not exist network"
+        if opt.helping_model == 'MSN':
             print("Fix MSN")
             for child in classifier.module.MSN_encoder.children():
                 for param in child.parameters():
                     param.requires_grad = False
 
-        elif opt.fix_mode == 'fix_Pose':
-            assert opt.helping_model == "3DPoseNet", "You are trying to fix a not exist network"
+        elif opt.helping_model == '3DPoseNet':
             print("Fix 3DPoseNet")
             for child in classifier.module.Pose_encoder.children():
                 for param in child.parameters():
